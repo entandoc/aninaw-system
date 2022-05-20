@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Sub-header */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(/images/sub-header-banner.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.sub-header h2{
+    padding-top: 8%;
+    font-weight: 700;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav h1{
+    font-size: 35px;
+    font-weight: 800;
+    color: #2009ef;
+}
+  
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+  
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+  
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+  
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #2009ef;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+
+/* Table */
+.table-container{
+    padding: 2rem 10% 3rem;
+    margin: 40px auto 0;
+}
+
+.table{
+    width: 100%;
+    margin: 25px 0;
+    font-size: 14px;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.table thead tr{
+    background-color: #2009ef;
+    color: #ffffff;
+}
+
+.table thead tr th{
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+}
+
+.table tbody tr td{
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.35px;
+    padding: 8px;
+    text-align: center;
+}
+
+.table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid #2009ef;
+}
+
+/* Status */
+.status{
+    border-radius: 3px;
+    background-color: red;
+    padding: 0.3rem;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-pending{
+    background-color: #fcf49a;
+    color: #a88a02;
+}
+
+.status-on-process{
+    background-color: #fcd4a9;
+    color: #f57200;
+}
+
+.status-completed{
+    background-color: #c8e6c9;
+    color: #388e3c;
+}
+
+.status-cancelled{
+    background-color: #ffcdd2;
+    color: #bc3838;
+}
+
+/* Pagination */
+.pagination{
+    justify-content: center;
+    text-align: center;
+    margin: 30px 30px 60px;
+    user-select: none;
+}
+  
+.pagination li{
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+  
+.pagination li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 45px;
+}
+  
+.previous-page, .next-page{
+    background: #5ce1e6;
+    width: 80px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+  
+.previous-page:hover{
+    transform: translateX(-5px);
+}
+  
+.next-page:hover{
+    transform: translateX(5px);
+}
+  
+.current-page{
+    background: lightgray;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+.active{
+    background: #5ce1e6;
+}
+  
+.disable{
+    background: lightgray;
+}
+
+/* Footer */
+.footer{
+    background-color: #efefef;
+    padding: 10px 0;
+}
+  
+.footer-container{
+    margin: 20px;
+}
+  
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.footer-col{
+    width: 20%;
+    padding: 10px;
+}
+  
+ul{
+    list-style: none;
+}
+  
+.footer-col h4{
+    font-size: 14px;
+    color: #737373;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-weight: 500;
+    position: relative;
+}
+  
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #2009ef;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+  
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+  
+.footer-col ul li a{
+    font-size: 12px;
+    color: #737373 !important;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+  
+.footer-col ul li a:hover{
+    padding-left: 8px;
+}
+  
+.footer-col .social-links a{
+    display: inline-block;
+    color: #737373;
+    padding-right: 5px;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+  
+.footer-col .social-links a:hover{
+    color: #2009ef;
+    background-color: #efefef;
+}
+  
+.copyright i{
+    font-size: 12px;
+    color: #737373 !important;
+}
+
+/* Navigation Bar Responsiveness */
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #5ce1e6;;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #2009ef;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/* Table Responsiveness */
+@media (max-width:768px){
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td:before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 800;
+        font-size: 14px;
+        color: #2009ef;
+        text-align: left;
+    }
+}
+
+/* Footer Responsiveness */
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
