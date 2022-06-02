@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComplaintController;
+use App\Models\Complaint;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,18 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/news', function () {
-    return view('news');
-});
-
-Route::get('/form', function () {
-    return view('form');
-});
-
-Route::get('/complaints', function () {
-    return view('complaints');
-});
+Route::get('/', [ComplaintController::class, 'home']);
+Route::get('/complaint', [ComplaintController::class, 'showApproved']);
+Route::get('/complaint/news', [ComplaintController::class, 'index']);
+Route::get('/complaint/news/{id}', [ComplaintController::class, 'show']);
+Route::get('/complaint/create', [ComplaintController::class, 'create']);
+Route::get('/complaint/about', [ComplaintController::class, 'showAbout']);
+Route::post('/form', [ComplaintController::class, 'store']);

@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Sub-header */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/sub-header-banner.svg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.sub-header h2{
+    padding-top: 8%;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 35px;
+    font-weight: 800;
+    color: #2009ef;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2009ef;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-links ul li.active{
+    background-color: #2009ef;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .nav-links ul li.active a{
+    color: #ffffff;
+  }
+  
+nav .fa{
+    display: none;
+}
+
+/* About Aninaw */
+.section-one{
+    width: 100%;
+    padding-top: 4rem;
+    display: flex;
+}
+
+.section-one .container-one{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.container-one .title-one{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container-one .title-one h1{
+    font-size: 25px;
+}
+
+.container-one .title-one h1::after{
+    content: "";
+    height: 3px;
+    width: 120px;
+    background-color: #2009ef;
+    border-radius: 25px;
+    display: block;
+    margin: 5px auto;
+}
+
+.content-one{
+    float: left;
+    width: 55%;
+}
+
+.content-one .article-one h3{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: 700;
+}
+
+.content-one .article-one p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.content-one .article-one .button{
+    margin-top: 30px;
+}
+
+.content-one .article-one .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #2009ef;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content-one .article-one .button a:hover{
+    box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
+}
+
+.image-section-one{
+    float: right;
+    width: 40%;
+}
+
+.image-section-one img{
+    width: 90%;
+    height: auto;
+}
+
+/* About Las Pinas */
+.section-two{
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+}
+
+.section-two .container-two{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.container-two .title-two{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container-two .title-two h1{
+    font-size: 25px;
+}
+
+.container-two .title-two h1::after{
+    content: "";
+    height: 3px;
+    width: 150px;
+    background-color: #2009ef;
+    border-radius: 25px;
+    display: block;
+    margin: 5px auto;
+}
+
+.content-two{
+    float: left;
+    width: 55%;
+}
+
+.content-two .article-two h3{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.content-two .article-two p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.content-two .article-two .button{
+    margin-top: 30px;
+}
+
+.content-two .article-two .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #2009ef;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content-two .article-two .button a:hover{
+    box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
+}
+
+.image-section-two{
+    float: right;
+    width: 40%;
+}
+
+.image-section-two img{
+    width: 90%;
+    height: auto;
+}
+
+/* The Developers */
+.section-three{
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+.section-three .container-three{
+    width: 80%;
+    margin: auto;
+}
+
+.section-three .container-three .row-three{
+    width: 60%;
+    margin: auto;
+}
+
+.section-three .container-three .row-three .title-three{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.section-three .container-three .row-three .title-three h1{
+    font-size: 25px;
+}
+
+.section-three .container-three .row-three .title-three h1::after{
+    content: "";
+    height: 3px;
+    width: 150px;
+    background-color: #2009ef;
+    border-radius: 25px;
+    display: block;
+    margin: 5px auto;
+}
+
+.section-three .container-three .team-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.section-three .container-three .team-card .card{
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.section-three .container-three .team-card .card:hover{
+    background-color: #f3f3f3;
+    transition: 0.3s;
+}
+
+.section-three .container-three .team-card .card .image-section-three img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+}
+
+.section-three .container-three .team-card .card .content-three{
+    width: 100%;
+    text-align: center;
+}
+
+.section-three .container-three .team-card .card .content-three h3{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.section-three .container-three .team-card .card .content-three h4{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.section-three .container-three .team-card .card .content-three p{
+    font-size: 13px;
+    margin: 10px 0px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Contact Us */
+.section-four{
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+}
+
+.section-four .container-four{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.container-four .title-four{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container-four .title-four h1{
+    font-size: 25px;
+}
+
+.container-four .title-four h1::after{
+    content: "";
+    height: 3px;
+    width: 98px;
+    background-color: #2009ef;
+    border-radius: 25px;
+    display: block;
+    margin: 5px auto;
+}
+
+.content-four{
+    float: left;
+    padding: 2rem 0;
+}
+
+.content-four form{
+    padding-bottom: 1rem;
+}
+
+.content-four form h3{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+.form-control{
+    width: 345px;
+    background-color: #efefef;
+    border-radius: 20px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.content-four form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+
+.content-four textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    outline: none;
+    resize: none;
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    max-height: 350px;
+    font-size: 16px;
+    background-color: #efefef;
+}
+
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+.content-four .button{
+    margin-top: 30px;
+}
+
+.content-four .button a{
+    text-decoration: none;
+    padding: 8px 40px;
+    background-color: #2009ef;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content-four .button a:hover{
+    box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
+}
+
+.image-section-four{
+    float: left;
+    width: 40%;
+}
+
+.image-section-four img{
+    width: 90%;
+    height: auto;
+}
+
+.btn{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+button{
+    justify-content: center;
+    font-weight: 700;
+    background: #2009ef !important;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    float: center;
+}
+
+button:hover{
+    text-decoration: none;
+    box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
+}
+
+
+/* Footer */
+.footer{
+    background-color: #efefef;
+    padding: 10px 0;
+    border-radius: 0 80px 0 0;
+}
+
+.footer-container{
+    margin: 20px;
+}
+
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 10px;
+ }
+
+ul{
+	list-style: none;
+}
+
+.footer-col h4{
+	font-size: 14px;
+	color: #737373;
+    font-weight: bold !important;
+	margin-bottom: 25px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #2009ef;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 12px;
+	color: #737373 !important;
+	text-decoration: none;
+	font-weight: 400;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	color: #737373;
+    padding-right: 5px;
+	transition: all 0.5s ease;
+    font-size: 20px;
+}
+
+.footer-col .social-links a:hover{
+	color: #2009ef;
+	background-color: #efefef;
+}
+
+.copyright i{
+    font-size: 12px;
+    color: #737373 !important;
+}
+
+
+/* Navigation Bar Responsivess */
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #5ce1e6;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #2009ef;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/* About Aninaw Responsivess */
+@media screen and (max-width: 768px){
+    .section-one .container-one{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .content-one{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section-one{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image-section-one img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/* About Las Pinas Responsivess */
+@media screen and (max-width: 768px){
+    .section-two .container-two{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .content-two{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section-two{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image-section-two img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/* The Developers Responsivess */
+@media screen and (max-width: 900px) {
+    .section-three .container-three .team-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-three .container-three .team-card{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Us Responsivess */
+@media screen and (max-width: 768px){
+    .section-four .container-four{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .content-four{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .content-four form div{
+        grid-template-columns: 1fr;
+    }
+    .form-control{
+        width: auto;
+    }
+    .image-section-four{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image-section-four img{
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .section-four .container-four{
+        width: 80%;
+        margin: auto;
+        position: relative;
+        justify-content: center;
+    }
+    .content-four{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .content-four form div{
+        grid-template-columns: 1fr;
+    }
+    .form-control{
+        width: auto;
+    }
+    .image-section-four{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image-section-four img{
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        text-align: center;
+    }
+}
+
+/* Footer Responsiveness */
+@media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+    }
+}

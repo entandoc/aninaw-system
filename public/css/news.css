@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap');
 
 *{
   margin: 0;
@@ -23,7 +23,7 @@ a{
 .sub-header{
   height: 50vh;
   width: 100%;
-  background-image: url(/images/sub-header-banner.png);
+  background-image: url(/images/sub-header-banner.svg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -32,6 +32,9 @@ a{
 .sub-header h2{
   padding-top: 8%;
   font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: 'Oswald', sans-serif;
 }
 
 nav{
@@ -77,6 +80,16 @@ nav h1{
 
 .nav-links ul li:hover::after{
   width: 100%;
+}
+
+.nav-links ul li.active{
+  background-color: #2009ef;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-links ul li.active a{
+  color: #ffffff;
 }
 
 nav .fa{
@@ -164,8 +177,8 @@ main a:hover{
 .main-container-right h4{
   text-align: center;
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 14px;
   align-self: center;
 }
 
@@ -240,6 +253,7 @@ main a:hover{
 .footer{
   background-color: #efefef;
   padding: 10px 0;
+  border-radius: 0 80px 0 0;
 }
 
 .footer-container{
@@ -263,9 +277,8 @@ list-style: none;
 .footer-col h4{
 font-size: 14px;
 color: #737373;
-  font-weight: bold;
 margin-bottom: 25px;
-font-weight: 500;
+font-weight: 600;
 position: relative;
 }
 
@@ -288,7 +301,7 @@ margin-bottom: 10px;
 font-size: 12px;
 color: #737373 !important;
 text-decoration: none;
-font-weight: 300;
+font-weight: 400;
 color: #bbbbbb;
 display: block;
 transition: all 0.3s ease;

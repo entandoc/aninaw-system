@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap');
 
 *{
     margin: 0;
@@ -11,7 +11,7 @@
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: url(/images/sub-header-banner.png);
+    background-image: url(/images/sub-header-banner.svg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -20,6 +20,9 @@
 .sub-header h2{
     padding-top: 8%;
     font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
 }
   
 nav{
@@ -67,6 +70,16 @@ nav h1{
     width: 100%;
 }
 
+.nav-links ul li.active{
+    background-color: #2009ef;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links ul li.active a{
+    color: #ffffff;
+}
+
 nav .fa{
     display: none;
 }
@@ -86,7 +99,8 @@ body{
     max-width: 700px;
     margin: 20px auto;
     padding: 70px;
-    background-color: #2009ef;
+    background-image: url(/images/form/f1.svg);
+    background-size: cover;
     border-radius: 10px;
 }
 
@@ -113,7 +127,6 @@ body{
     width: 50%;
     outline: none;
 }
-
 
 .input-full{
     border: 1px solid gray;
@@ -163,35 +176,35 @@ textarea::-webkit-scrollbar{
 }
 
 /* Submit Button */
-.submit{
+.btn{
+    padding-top: 2rem;
+    padding-bottom: 8rem;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
 }
 
-.hero-btn{
+button{
+    justify-content: center;
     font-weight: 700;
-    text-decoration: none;
     background: #2009ef !important;
     color: white;
     border-radius: 20px;
+    border: none;
     padding: 10px 40px;
     font-size: 14px;
-    background: transparent;
     cursor: pointer;
+    float: center;
 }
 
-.hero-btn:hover{
+button:hover{
     text-decoration: none;
-    background: #2009ef;
-    transition: 1s;
+    box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
 }
 
 /* Dropdown List */
 .dropdown{
     background: white;
     border: 1px solid gray;
-    width: 250px;
+    width: 322px;
     height: 30px;
     border-radius: 5px;
     color: #333;
@@ -214,8 +227,8 @@ textarea::-webkit-scrollbar{
     right: 5px;
     top: 0px;
     color: gray;
-    font-size: 16px;
-    transition: all 0.3s eases;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .dropdown_panel{
@@ -253,6 +266,104 @@ textarea::-webkit-scrollbar{
     background: #eeeeee;
 }
 
+/* Dynamic dropdown */
+select{
+    background: white;
+    width: 322px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-right: 20px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#slct1{
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer{
+    background-color: #efefef;
+    padding: 10px 0;
+    border-radius: 0 80px 0 0;
+}
+
+.footer-container{
+    margin: 20px;
+}
+
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 10px;
+ }
+
+ul{
+	list-style: none;
+}
+
+.footer-col h4{
+	font-size: 14px;
+	color: #737373;
+	margin-bottom: 25px;
+	font-weight: 600;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #2009ef;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 12px;
+	color: #737373 !important;
+	text-decoration: none;
+	font-weight: 400;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	color: #737373;
+    padding-right: 5px;
+	transition: all 0.5s ease;
+    font-size: 20px;
+}
+
+.footer-col .social-links a:hover{
+	color: #2009ef;
+	background-color: #efefef;
+}
+
+.copyright i{
+    font-size: 12px;
+    color: #737373 !important;
+}
+
 /* Navigation Bar Responsiveness */
 @media(max-width: 700px){
     .text-box h1{
@@ -281,5 +392,12 @@ textarea::-webkit-scrollbar{
     }
     .nav-links ul{
         padding: 30px;
+    }
+}
+
+/* Footer Responsiveness */
+@media(max-width: 574px){
+    .footer-col{
+      width: 100%;
     }
 }

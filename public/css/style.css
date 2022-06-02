@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap');
 
 *{
     margin: 0;
@@ -9,7 +9,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(/images/bg1.png);
+    background-image: url(/images/home/background.svg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -61,6 +61,16 @@ nav h1{
     width: 100%;
 }
 
+.nav-links ul li.active{
+    background-color: #2009ef;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links ul li.active a{
+    color: #ffffff;
+}
+
 .text-box{
     width: 90%;
     color: #000000;
@@ -77,12 +87,14 @@ nav h1{
 }
 
 .text-box h1{
-    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
 }
 
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 500;
     color: #000000;
 }
  
@@ -102,7 +114,7 @@ nav h1{
 
 .hero-btn:hover{
     background: #2009ef;
-    transition: 1s;
+    box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
 }
 
 nav .fa{
@@ -117,6 +129,16 @@ nav .fa{
     padding-top: 50px;
 }
 
+.guide h1{
+    font-size: 30px;
+}
+
+.guide p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 3;
+}
+
 .guide-col{
     flex-basis: 31%;
     margin-bottom: 5%;
@@ -128,8 +150,11 @@ nav .fa{
     box-align: center;
 }
 
-.guide-col p{
+.row .guide-col p{
     padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 /* Call to Action */
@@ -137,7 +162,7 @@ nav .fa{
     margin: 100px auto;
     padding: 100px 0;
     width: 80%;
-    background-image: url(/images/banner.png);
+    background-image: url(/images/home/banner.svg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -146,14 +171,17 @@ nav .fa{
 
 .cta h1{
     color: white;
-    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
     padding: 20px;
 }
 
 .cta p{
     color: white;
     font-size: 20px;
+    font-weight: 400;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 /* Updates */
@@ -164,17 +192,14 @@ nav .fa{
     padding-top: 5vh;
 }
 
-h1{
-    font: 30px;
+.updates h1{
+    font-size: 30px;
 }
 
-p{
-    color: #000000;
-    font-size: 14px;
-    font-weight: 300;
-    text-align: center;
-    line-height: 22px;
-    padding: 10px;
+.updates p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 3;
 }
 
 .row{
@@ -183,7 +208,7 @@ p{
     justify-content: space-between;
 }
 
-.updates-col{
+.row .updates-col{
     flex-basis: 31%;
     background: #5ce1e6;
     border-radius: 10px;
@@ -193,11 +218,14 @@ p{
     transition: 0.5s;
 }
 
-.updates-col p{
+.row .updates-col p{
     text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
-h3{
+.row .updates-col h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
@@ -209,7 +237,8 @@ h3{
 
 .updates-col a{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
     color: #2009ef;
 }
 
@@ -222,6 +251,7 @@ h3{
 .footer{
     background-color: #efefef;
     padding: 10px 0;
+    border-radius: 0 80px 0 0;
 }
 
 .footer-container{
@@ -245,9 +275,8 @@ ul{
 .footer-col h4{
 	font-size: 14px;
 	color: #737373;
-    font-weight: bold !important;
 	margin-bottom: 25px;
-	font-weight: 500;
+	font-weight: 600;
 	position: relative;
 }
 
@@ -270,7 +299,7 @@ ul{
 	font-size: 12px;
 	color: #737373 !important;
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 400;
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
@@ -326,6 +355,16 @@ ul{
     }
     .nav-links ul{
         padding: 30px;
+    }
+    .text-box h1{
+        font-size: 40px;
+    }
+    .text-box img{
+        height: 60%;
+        width: 60%;
+    }
+    .text-box p{
+        font-size: 17px;
     }
 }
 
