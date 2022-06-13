@@ -23,12 +23,12 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li class="home"><a href="index.html">Home</a></li>
-                    <li class="news"><a href="news.html">News</a></li>
-                    <li class="form"><a href="form.html">Form</a></li>
-                    <li class="complaints"><a href="complaints.html">Complaints</a></li>
-                    <li class="about"><a href="about-aninaw.html">About</a></li>
-                  </ul>
+                  <li class="home"><a href="/">Home</a></li>
+                  <li class="news"><a href="/complaint/news">News</a></li>
+                  <li class="form"><a href="/complaint/create">Form</a></li>
+                  <li class="complaints"><a href="/complaint">Complaints</a></li>
+                  <li class="about"><a href="/complaint/about">About</a></li>
+                </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>

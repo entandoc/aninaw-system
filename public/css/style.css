@@ -89,6 +89,7 @@ nav h1{
 .text-box h1{
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
+    font-weight: 600;
 }
 
 .text-box p{
@@ -114,6 +115,8 @@ nav h1{
 
 .hero-btn:hover{
     background: #2009ef;
+    color: white;
+    text-decoration: none;
     box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
 }
 
@@ -122,21 +125,21 @@ nav .fa{
 }
 
 /* Guide Section */
+.guide-h1{
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
 .guide{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
-}
-
-.guide h1{
-    font-size: 30px;
-}
-
-.guide p{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 3;
 }
 
 .guide-col{
@@ -148,6 +151,12 @@ nav .fa{
 .guide-col img{
     width: 90%;
     box-align: center;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .row .guide-col p{
@@ -184,67 +193,72 @@ nav .fa{
     line-height: 1.5;
 }
 
-/* Updates */
-.updates{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 5vh;
-}
-
-.updates h1{
-    font-size: 30px;
-}
-
-.updates p{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 3;
-}
-
-.row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.row .updates-col{
-    flex-basis: 31%;
-    background: #5ce1e6;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-.row .updates-col p{
-    text-align: left;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-.row .updates-col h3{
-    text-align: center;
+/* Departments */
+.departments-h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
     font-weight: 600;
-    margin: 10px 0;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 
-.updates-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+/* Departments Collapse */
+.departments-body{
+    text-align: justify;
+    padding: 3rem 200px;
 }
 
-.updates-col a{
-    text-decoration: none;
-    font-size: 14px;
+.collapsible{
+    width: 100%;
+    padding: 18px;
+    background: none;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
     font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.active, .collapsible:hover{
     color: #2009ef;
 }
+  
+.collapsible:after{
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after{
+    content: "\2212";
+}
+  
+.content{
+    text-align: justify;
+    padding: 0 40px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.1s;
+    font-size: 18px;
+}
 
-.updates-col a:hover{
-    text-decoration: underline;
-    font-weight: 700;
+.content p{
+    padding-top: 1.5rem;
+}
+
+.departments-ul{
+    text-align: justify;
+    list-style-type: square;
+    margin-left: 40px;
 }
 
 /* Footer */
@@ -337,7 +351,7 @@ ul{
     }
     .nav-links{
         position: fixed;
-        background: #5ce1e6;;
+        background-image: url(/images/navigation-bar.svg);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -368,17 +382,65 @@ ul{
     }
 }
 
-/* Call to Action Responsiveness */
-@media(max-width: 700px){
-    .cta h1{
-        font-size: 24px;
-    }
-}
-
-/* Updates Responsiveness */
+/* Guide Responsiveness */
 @media(max-width: 700px){
     .row{
         flex-flow: column;
+    }
+    .guide-h1{
+        font-size: 33px;
+    }
+}
+
+/* Call to Action Responsiveness */
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 30px;
+    }
+    .cta p{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+/* Departments Responsiveness */
+@media(max-width: 700px){
+    .departments-body{
+        padding: 3rem 1rem;
+    }
+    .departments-h1{
+        font-size: 33px;
+    }
+    .collapsible{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .departments-ul{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1080px){
+    .departments-body{
+        padding: 3rem 5rem;
+    }
+    .departments-h1{
+        font-size: 50px;
+    }
+    .collapsible{
+        width: 100%;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .content p{
+        font-size: 18px;
+    }
+    .departments-ul{
+        font-size: 18px;
     }
 }
 
@@ -388,3 +450,5 @@ ul{
       width: 100%;
     }
 }
+
+

@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class AdminController extends Controller
+{
+    public function dashboard() {
+        return view('admin.dashboard');
+    }
+
+    public function complaintReqs() {
+        return view('admin.complaint-reqs');
+    }
+
+    public function approvedComplaints() {
+        return view('admin.approved-complaints');
+    }
+
+    public function newsAccess() {
+        return view('admin.news-access');
+    }
+
+    public function adminUsers() {
+        return view('admin.admin-users');
+    }
+}

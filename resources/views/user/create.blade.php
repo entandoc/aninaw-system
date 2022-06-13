@@ -96,11 +96,9 @@
                             <option value="cpdo"> City Planning and Development Office </option>
                             <option value="cswdo"> City Social Welfare & Development Office </option>
                             <option value="hrmd"> Human Resource Management Department </option>
-                            <option value="oca"> Office of the City Assessor </option>
                             <option value="occr"> Office of the City Civil Registry </option>
-                            <option value="oce"> Office of the City Engineer  </option>
+                            <option value="oce"> Office of the City Engineer </option>
                             <option value="ocm"> Office of the City Mayor </option>
-                            <option value="oct"> Office of the City Treasurer </option>
                             <option value="pd"> Police Department </option>
                             <option value="upao"> Urban Poor Affairs Offices </option>
                         </select>
@@ -188,7 +186,6 @@
             </div>
         </div>
     </footer>
-
 
     <!-- JavaScript for Toggle Menu -->
     <script>
@@ -305,65 +302,62 @@
             s2.innerHTML = "";
 
             if(s1.value == "bplo"){
-                var optionArray = ['Unable to pay taxes|Unable to pay taxes',
+                var optionArray = ['Choose Nature of Complaint|Choose Nature of Complaint', 'Unable to pay taxes|Unable to pay taxes',
                 'Running a business without business permit|Running a business without business permit',
                 'Businesses that are acting in an anticompetitive manner|Businesses that are acting in an anticompetitive manner',
-                'Consumer complaint against an online seller|Consumer complaint against an online seller'];
+                'Consumer complaint against an online seller|Consumer complaint against an online seller', 'Others|Others'];
             }
             else if(s1.value == 'cho'){
-                var optionArray = ['Report about positive in Covid-19|Report about positive in Covid-19',
+                var optionArray = ['Choose Nature of Complaint|Choose Nature of Complaint',
+                'Report about positive in Covid-19|Report about positive in Covid-19',
                 'Crowded vaccination site|Crowded vaccination site',
-                'Improper sanitation|Improper sanitation'];
+                'Improper sanitation|Improper sanitation', 'Others|Others'];
             }
             else if(s1.value == 'cpdo'){
-                var optionArray = ['Manages development policy|Manages development policy',
-                'Reviewing plans|Reviewing plans','Issuing permit|Issuing permit'];
+                var optionArray = ['Choose Nature of Complaint|Choose Nature of Complaint', 'Issuing permit|Issuing permit', 'Others|Others'];
             }
             else if(s1.value == 'cswdo'){
-                var optionArray = ['Physical abuse|Physical abuse','Child abuse|Child abuse',
+                var optionArray = ['Choose Nature of Complaint|Choose Nature of Complaint',
+                'Physical abuse|Physical abuse','Child abuse|Child abuse',
                 'Abandoning child|Abandoning child','Sexual abuse|Sexual abuse',
                 'Violence against women|Violence against women','Others|Others'];
             }
             else if(s1.value == 'hrmd'){
-                var optionArray = ['Employee complaint|Employee complaint','Incompliance|Incompliance',
-                'Not strategic planning|Not strategic planning'];
-            }
-            else if(s1.value == 'oca'){
-                var optionArray = ['Real property assessment complaints|Real property assessment complaints'];
+                var optionArray = ['Choose Nature of Complaint|Choose Nature of Complaint', 
+                'Employee complaint|Employee complaint','Incompliance|Incompliance',
+                'Not strategic planning|Not strategic planning', 'Others|Others'];
             }
             else if(s1.value == 'occr'){
-                var optionArray = ['Late registration of certificate of live birth|Late registration of certificate of live birth',
+                var optionArray = ['Choose Nature of Complaint|Choose Nature of Complaint',
+                'Late registration of certificate of live birth|Late registration of certificate of live birth',
                 'Application and issuance of marriage license|Application and issuance of marriage license',
                 'Late registration of marriage certificate|Late registration of marriage certificate',
                 'Fake marriage certificate|Fake marriage certificate',
                 'Late registration of death certificate|Late registration of death certificate',
-                'Petition to change name and sex|Petition to change name and sex'];
+                'Petition to change name and sex|Petition to change name and sex', 'Others|Others'];
             }
             else if(s1.value == 'oce'){
-                var optionArray = ['Using substandard materials for infrastructure projects|Using substandard materials for infrastructure projects',
-                'Over budget for a project|Over budget for a project',
-                'Broken roads and bridges|•	Broken roads and bridges'];
+                var optionArray = ['Choose Nature of Complaint|Choose Nature of Complaint',
+                'Broken roads and bridges|Broken roads and bridges', 'Others|Others'];
             }
             else if(s1.value == 'ocm'){
-                var optionArray = ['Crime|Crime','Improper garbage disposal|Improper garbage disposal',
+                var optionArray = ['Choose Nature of Complaint|Choose Nature of Complaint',
+                'Crime|Crime','Improper garbage disposal|Improper garbage disposal',
                 'Noise complaint|Noise complaint','Illegal business|Illegal business',
-                'Illegal claim of land|Illegal claim of land'];
-            }
-            else if(s1.value == 'oct'){
-                var optionArray = [''];
+                'Illegal claim of land|Illegal claim of land', 'Others|Others'];
             }
             else if(s1.value == 'pd'){
-                var optionArray = ['Illegal business|Illegal business',
+                var optionArray = ['Choose Nature of Complaint|Choose Nature of Complaint', 'Illegal business|Illegal business',
                 'Possession of illegal drugs|Possession of illegal drugs',
                 'Possession of illegal firearms|Possession of illegal firearms',
                 'Fighting of neighbours|Fighting of neighbours','Physical injury|Physical injury',
-                'Child abuse|Child abuse','Sexual abuse|Sexual abuse',
-                'Catcalling|Catcalling'];
+                'Child abuse|Child abuse','Sexual abuse|Sexual abuse', 'Catcalling|Catcalling', 'Others|Others'];
             }
             else if(s1.value == 'upao'){
-                var optionArray = ['Land dispute complaints|Land dispute complaints',
-                'Ejectment cases|Ejectment cases',
-                'Report of association anomalies and other queries|Report of association anomalies and other queries'];
+                var optionArray = ['Choose Nature of Complaint|Choose Nature of Complaint',
+                'Land dispute complaints|Land dispute complaints', 'Ejectment cases|Ejectment cases',
+                'Report of association anomalies and other queries|Report of association anomalies and other queries',
+                'Others|Others'];
             }
 
             for(var option in optionArray){

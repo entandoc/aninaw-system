@@ -51,4 +51,12 @@ class ComplaintController extends Controller
 
         return redirect('/');
     }
+
+    public function telephoneDirectory() {
+        return view('user.telephone-directory');
+    }
+
+    public function successMessage() {
+        return view('user.success-message');
+    }
 }

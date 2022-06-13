@@ -5,9 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Bootstrap cdn-->
+  <!--Bootstrap 4-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
+
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="/css/style.css">
 
@@ -38,15 +42,13 @@
       <img src="/images/home/logo.svg">
       <h1>WELCOME TO ANINAW!</h1>
       <p>A complaint and suggestion management system for Las Pinas City.</p>
-      <a href="about-aninaw.html" class="hero-btn">Learn More</a>
+      <a href="/complaint/about" class="hero-btn">Learn More</a>
     </div>
   </section>
 
   <!--Citizens' Guide-->
   <section class="guide">
-    <h1>Citizens' Guide</h1>
-    <p>A breif guide of what the citizen can do on the website.</p>
-
+    <h1 class="guide-h1">CITIZEN'S GUIDE</h1>
     <div class="row">
       <div class="guide-col">
         <img src="/images/home/1.svg">
@@ -68,53 +70,164 @@
   <!--Call To Action-->
   <section class="cta">
     <h1>DO YOU HAVE CONCERNS?</h1>
-    <p>Submit your concerns, complaints, and reports by filling-up the form provided. <br> Click the button below.</p>
-    <a href="form.html" class="hero-btn">Click Here</a>
+    <p>Submit your concerns, complaints, and reports by filling-up the form provided. <br> <br> Click the button below.</p>
+    <a href="/complaint/create" class="hero-btn">Click Here</a>
   </section>
 
-  <!--Updates-->
-  <section class="updates">
-    <h1>Las Pinas City Updates</h1>
-    <p>Recent updates in Las Pinas City.</p>
-
-    <div class="row">
-      <div class="updates-col">
-          <h3>Free Education</h3>
-          <p>For those inclines in information technology (IT) may enroll at Dr. Filemon C. Aguilar Information Technology Traning Institute (DFCAITTI), also subsidized by the city. Diploma courses...</p>
-          <a href="">Read More -></a>
+  <!-- Departments -->
+  <section class="departments">
+    <h1 class="departments-h1">SUBJECT OF COMPLAINTS</h1>
+  
+    <div class="departments-body">
+      <button class="collapsible">Business Permit and Licensing Office</button>
+      <div class="content">
+        <p>Protecting your business legally, licenses can boost credibility and allow you to
+          apply for citywide funding. Moreover, if your company has staff or sells taxable
+          products or services, you also need to register with the taxing authorities.
+          <br><br> The following are the types of complaints they accept:
+        </p>
+        <ul class="departments-ul">
+          <li>Unable to pay taxes.</li>
+          <li>Running a business without business permit.</li>
+          <li>Businesses that are acting in an anticompetitive manner.</li>
+          <li>Consumer complaint against an online seller.</li>
+        </ul>
       </div>
 
-      <div class="updates-col">
-          <h3>Clean and Green Environment</h3>
-          <p>Waste management is a well-known best practice in the city. Regular and efficient collection of garbage is done in over 250 private villages and subdivisions as well as the rest...</p>
-          <a href="">Read More -></a>
+      <button class="collapsible">City Health Office</button>
+      <div class="content">
+        <p>Formulation and implementation of policies, programs and projects to promote the
+          health of the people in the community. Maintain proper sanitation and cleanliness
+          in accordance with the sanitation code. Maintain health information system that
+          provides vital health statistics and health status indicators.
+          <br><br> The following are the types of complaints they accept:
+        </p>
+        <ul class="departments-ul">
+          <li>Report about positive in covid-19.</li>
+          <li>Crowded vaccination site.</li>
+          <li>Improper sanitation.</li>
+          <li>Dirty city/environment.</li>
+        </ul>
       </div>
 
-      <div class="updates-col">
-          <h3>Infrastructure Development</h3>
-          <p>The rapid modernization of Las Piñas can be attributed to local government’s resolve to give precedence on infrastructure projects. Budgetary constraints did not deter the administration...</p>
-          <a href="">Read More -></a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="updates-col">
-        <h3>Best Practices in Good Governance</h3>
-        <p>Las Piñas is home to some of the best practices in local governance. The City Hall is a model of public office that is accessible and people-friendly. City employees have internalized...</p>
-        <a href="">Read More -></a>
-      </div>
-
-      <div class="updates-col">
-        <h3>Free Hospitalization via Green Card</h3>
-        <p>Green Card is synonymous with the health care system of Las Piñas. Every bonafide resident is entitled to free hospitalization worth PhP 30,000 subsidized by the city...</p>
-        <a href="">Read More -></a>
+      <button class="collapsible">City Planning and Development Office</button>
+      <div class="content">
+        <p>Guides future physical and economic development. Staff in this department manages
+          development policy, conducts research and supports the City’s long-term vision.
+          The Department also works to guide the development process by issuing permits,
+          reviewing plans and enforcing development policy.
+          <br><br> The following are the types of complaints they accept:
+        </p>
+        <ul class="departments-ul">
+          <li>Issuing permit.</li>
+        </ul>
       </div>
 
-      <div class="updates-col">
-        <h3>Historical Milestone</h3>
-        <p>1979- The appointment of Fray Diego Cera, the visionary Agustinian priest, to Las Piñas. His arrival in the once sleepy village of Las Piñas, a barrio of Parañaque, had steered the way...</p>
-        <a href="">Read More -></a>
+      <button class="collapsible">City Social Welfare & Development Office</button>
+      <div class="content">
+        <p>The MSWDO will care, protect and develop the disadvantaged sectors to become
+          self-reliant and productive citizens in the community through responsive delivery
+          of social welfare services. <br><br> The following are the types of complaints they accept:
+        </p>
+        <ul class="departments-ul">
+          <li>Physical abuse.</li>
+          <li>Child abuse.</li>
+          <li>Abandoning child.</li>
+          <li>Sexual abuse.</li>
+          <li>Violence against women.</li>
+        </ul>
       </div>
+
+      <button class="collapsible">Human Resource Management Department</button>
+      <div class="content">
+        <p>Recruiting and hiring to meet the needs of vacancies within the City Responding
+          to the needs of the City's workforce through compliance, strategic planning, and
+          workforce development. <br><br> The following are the types of complaints they accept:
+        </p>
+        <ul class="departments-ul">
+          <li>Employee complaint.</li>
+          <li>Incompliance.</li>
+          <li>Not strategic planning .</li>
+        </ul>
+      </div>
+
+      <button class="collapsible">Office of the City Civil Registry</button>
+      <div class="content">
+        <p>Responsible for the continuous and permanent recording of the occurrences and
+          characteristics of vital events in accordance with the legal requirements in a city.
+          <br><br> The following are the types of complaints they accept:
+        </p>
+        <ul class="departments-ul">
+          <li>Late registration of certificate of live birth.</li>
+          <li>Application and issuance of marriage license.</li>
+          <li>Late registration of marriage certificate.</li>
+          <li>Fake marriage certificate.</li>
+          <li>Late registration of death certificate.</li>
+          <li>Petition to change name and sex.</li>
+        </ul>
+      </div>
+
+      <button class="collapsible">Office of the City Engineer</button>
+      <div class="content">
+        <p>City engineers are civil engineers who are employed by city governments. They design
+          roads, bridges and other infrastructure projects and ensure they adhere to budgetary
+          and environmental requirements. City engineers also oversee the execution of their
+          projects, so they must have management skills.
+          <br><br> The following are the types of complaints they accept:
+        </p>
+        <ul class="departments-ul">
+          <li>Broken roads and bridges.</li>
+        </ul>
+      </div>
+
+      <button class="collapsible">Office of the City Mayor</button>
+      <div class="content">
+        <p>The office of the mayor is tasked with promoting the general welfare of the City
+          and its constituents through the efficient, effective, relevant and economical governance.
+          <br><br> The following are the types of complaints they accept:
+        </p>
+        <ul class="departments-ul">
+          <li>Crime.</li>
+          <li>Improper garbage disposal.</li>
+          <li>Noise complaint.</li>
+          <li>Illegal business.</li>
+          <li>Illegal claim of land</li>
+        </ul>
+      </div>
+
+      <button class="collapsible">Police Department</button>
+      <div class="content">
+        <p>Responsible for maintaining public order and safety, enforcing the law, and preventing,
+          detecting, and investigating criminal activities. These functions are known as policing.
+          Police are often also entrusted with various licensing and regulatory activities.
+          <br><br> The following are the types of complaints they accept:
+        </p>
+        <ul class="departments-ul">
+          <li>Illegal business.</li>
+          <li>Possession of illegal drugs.</li>
+          <li>Possession of illegal firearms.</li>
+          <li>Fighting of neighbours.</li>
+          <li>Physical injury.</li>
+          <li>Child abuse.</li>
+          <li>Sexual abuse.</li>
+          <li>Catcalling.</li>
+        </ul>
+      </div>
+
+      <button class="collapsible">Urban Poor Affairs Offices</button>
+      <div class="content">
+        <p>Tasked to accommodate/entertain urban poor affairs such as land dispute complaints,
+          ejectment cases, report of association anomalies and other queries and make necessary
+          actions/advice regarding the matter.
+          <br><br> The following are the types of complaints they accept:
+        </p>
+        <ul class="departments-ul">
+          <li>Land dispute complaints.</li>
+          <li>Ejectment cases.</li>
+          <li>Report of association anomalies and other queries.</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
@@ -128,7 +241,7 @@
           <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Operating Hours</a></li>
-            <li><a href="#">Telephone Directory</a></li>
+            <li><a href="/directory">Telephone Directory</a></li>
           </ul>
         </div>
 
@@ -136,7 +249,7 @@
           <h4>Aninaw</h4>
           <ul>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">The Developers</a></li>
+            <li><a href="/complaint/about#developers">The Developers</a></li>
             <li><a href="#">Privacy and Terms</a></li>
           </ul>
         </div>
@@ -145,7 +258,7 @@
           <h4>Get Help</h4>
           <ul>
             <li><a href="#">FAQs</a></li>
-            <li><a href="form.html">Submit Form</a></li>
+            <li><a href="/complaint/create">Submit Form</a></li>
           </ul>
         </div>
 
@@ -174,6 +287,26 @@
       navLinks.style.right="-200px";
     }
   </script>
+
+  <!-- JavaScript for Toggle Collapse Section -->
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+  
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        }else{
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+  </script>
+
+
 
 </body>
 </html>

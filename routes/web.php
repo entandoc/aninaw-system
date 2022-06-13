@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ComplaintController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DepartmentController;
 use App\Models\Complaint;
 
 /*
@@ -22,3 +24,14 @@ Route::get('/complaint/news/{id}', [ComplaintController::class, 'show']);
 Route::get('/complaint/create', [ComplaintController::class, 'create']);
 Route::get('/complaint/about', [ComplaintController::class, 'showAbout']);
 Route::post('/form', [ComplaintController::class, 'store']);
+Route::get('/directory', [ComplaintController::class, 'telephoneDirectory']);
+Route::get('/successsful', [ComplaintController::class, 'successMessage']);
+
+/* Admin Module */
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
+Route::get('/admin/requests', [AdminController::class, 'complaintReqs']);
+Route::get('/admin/approved', [AdminController::class, 'approvedComplaints']);
+Route::get('/admin/news', [AdminController::class, 'newsAccess']);
+Route::get('/admin/users', [AdminController::class, 'adminUsers']);
+
+/* Department Module */
