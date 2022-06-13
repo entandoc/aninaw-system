@@ -98,7 +98,6 @@
                             <th>Location</th>
                             <th>Nature of Complaint</th>
                             <th>View</th>
-                            <th>Update</th>
                             <th>Delete</th>
                         </tr>
                     </thead>
@@ -110,7 +109,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Update"><a href="" class="btn" id="update">Update</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
@@ -121,7 +119,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Update"><a href="" class="btn" id="update">Update</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
@@ -132,7 +129,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Update"><a href="" class="btn" id="update">Update</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
@@ -143,7 +139,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Update"><a href="" class="btn" id="update">Update</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
@@ -154,7 +149,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Update"><a href="" class="btn" id="update">Update</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
@@ -165,7 +159,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Update"><a href="" class="btn" id="update">Update</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
                     </tbody>

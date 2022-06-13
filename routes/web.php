@@ -33,5 +33,6 @@ Route::get('/admin/requests', [AdminController::class, 'complaintReqs']);
 Route::get('/admin/approved', [AdminController::class, 'approvedComplaints']);
 Route::get('/admin/news', [AdminController::class, 'newsAccess']);
 Route::get('/admin/users', [AdminController::class, 'adminUsers']);
+Route::get('/admin/view/requests', [AdminController::class, 'viewRequests']);
 
 /* Department Module */
