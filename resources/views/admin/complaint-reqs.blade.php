@@ -8,6 +8,9 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
 
@@ -107,8 +110,8 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve">Approve</td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject">Reject</td>
+                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
+                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
 
                         <tr>
@@ -118,8 +121,8 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve">Approve</td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject">Reject</td>
+                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
+                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
 
                         <tr>
@@ -129,8 +132,8 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve">Approve</td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject">Reject</td>
+                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
+                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
 
                         <tr>
@@ -140,8 +143,8 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve">Approve</td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject">Reject</td>
+                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
+                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
 
                         <tr>
@@ -151,8 +154,8 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve">Approve</td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject">Reject</td>
+                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
+                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
 
                         <tr>
@@ -162,13 +165,47 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve">Approve</td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject">Reject</td>
+                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
+                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+
+        <!-- Reject Modal -->
+        <div class="container">
+            <input type="checkbox" id="check">
+            <div class="background"></div>
+            <div class="alert_box">
+              <div class="icon">
+                <i class="fas fa-exclamation"></i>
+              </div>
+              <header>Reject Complaint Request</header>
+              <p>Are you sure you want to reject the requested complaint?</p>
+              <div class="btns">
+                <label for="check">Yes, Reject!</label>
+                <label for="check">Cancel</label>
+              </div>
+            </div>
+        </div> 
+
+        <!-- Approve Modal -->
+        <div class="container2">
+            <input type="checkbox" id="check2">
+            <div class="background2"></div>
+            <div class="alert_box2">
+              <div class="icon2">
+                <i class="fas fa-solid fa-check"></i>
+              </div>
+              <header>Approve Complaint Request</header>
+              <p>Are you sure you want to approve the requested complaint?</p>
+              <div class="btns2">
+                <label for="check2">Yes, Approve!</label>
+                <label for="check2">Cancel</label>
+              </div>
+            </div>
+        </div>  
     </section>
 
     <!-- JavaScript for Sidebar Toggle -->  

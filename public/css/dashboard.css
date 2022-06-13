@@ -118,6 +118,7 @@ nav .sidebar-button i{
 .home-section .home-content{
   position: relative;
   padding-top: 104px;
+  margin-bottom: 5rem;
 }
 .home-content .overview-boxes{
   display: flex;

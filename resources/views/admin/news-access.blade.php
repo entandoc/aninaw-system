@@ -8,6 +8,9 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
 
@@ -104,7 +107,7 @@
                             <td data-label="Author">Metro Cities News</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
                             <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete">Delete</td>
+                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
                         <tr>
@@ -113,7 +116,7 @@
                             <td data-label="Author">Metro Cities News</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
                             <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete">Delete</td>
+                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
                         <tr>
@@ -122,7 +125,7 @@
                             <td data-label="Author">Metro Cities News</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
                             <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete">Delete</td>
+                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
                         <tr>
@@ -131,7 +134,7 @@
                             <td data-label="Author">Metro Cities News</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
                             <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete">Delete</td>
+                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
                         <tr>
@@ -140,7 +143,7 @@
                             <td data-label="Author">Metro Cities News</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
                             <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete">Delete</td>
+                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
                         <tr>
@@ -149,13 +152,30 @@
                             <td data-label="Author">Metro Cities News</td>
                             <td data-label="View"><a href="" class="btn" id="view">View</td>
                             <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete">Delete</td>
+                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
+
+    <!-- Delete Modal -->
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="background"></div>
+        <div class="alert_box">
+            <div class="icon">
+                <i class="fas fa-exclamation"></i>
+            </div>
+            <header>Delete Approved Complaint</header>
+            <p>Are you sure you want to delete the approved complaint?</p>
+            <div class="btns">
+                <label for="check">Yes, Delete!</label>
+                <label for="check">Cancel</label>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript for Sidebar Toggle -->  
     <script>
