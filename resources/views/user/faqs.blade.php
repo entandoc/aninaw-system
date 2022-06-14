@@ -13,13 +13,14 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
-    
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="/css/success-message.css">
 
-    <title>Aninaw Form</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/css/faqs.css">
+
+    <title>Aninaw FAQs</title>
 </head>
 <body>
+
     <!-- Sub-header -->
     <section class="sub-header">
         <nav>
@@ -36,25 +37,62 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h2>ANINAW FORM</h2>
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
     </section>
 
-    <!-- Success Message -->
-    <section class="wrapper">
-        <div class="con-container"></div>
-        <div class="container">
-            <h2>Form Successfuly Submitted!</h2>
-            <h3>Ticket Reference # 00001</h3>
-            <p>Your complaint/report has been submitted successfully and will now undergo approval.
-                Please wait for our email or call once your complaint/report is approved and ready for processing.
-                To check complaints/report, you can visit the <a href="/complaint">complaints table sheet</a>
-                page for viewing of status.
-            </p>
-            <br>
-            <br>
-            <p>If you have another complaint/report, just click <a href="/complaint/create">here.</a></p>
+    <!-- Body -->
+    <section class="faqs">
+        <div class="faqs-body">
+            <button class="collapsible">Communication Channels?</button>
+            <div class="content">
+                <p>Citizens’ can lodge their complaints, concerns, and suggestion to Aninaw
+                    through the Aninaw website. Get the fastest response from
+                    Las Piñas City Hall through email/call. 
+                </p>
+            </div>
+
+            <button class="collapsible">Concerns accepted by Aninaw?</button>
+            <div class="content">
+                <p>The Aninaw system is built for easy access and communication between the local
+                    government and its citizens. It is created to cater complaints and suggestions
+                    that needed to be addressed by the local government, officers, and employees.
+                    <br>
+                    <br>
+                    Click <a href=""> here</a> to view all the complaints that the Aninaw caters.
+                </p>
+            </div>
+
+            <button class="collapsible">Benefits of having Aninaw aside from phone calls and suggestion boxes?</button>
+            <div class="content">
+                <p>It will improve the life of citizens on a day-to-day basis by being provided with a website where
+                    they can submit their complaints and suggestion regarding how to make the city a better place to live in. 
+                </p>
+            </div>
+
+            <button class="collapsible">Information Needed to Submit a concern?</button>
+            <div class="content">
+                <p>Las Piñas citizen who wished to submit a complaint needs to provide their basic information
+                    for documentation, processing, and verification. At the minimum, this information should
+                    include the following data as part of the process:
+                    (a) Email, (b) Full Name, (c) Full Address, (d) Landmark, (e) Subject of Complaint, 
+                    (f) Complaint Description, (g) Proof of photo (optional), and (h) Accepted terms and conditions.
+                    Take note that the resident's details will be required.
+                    <br>
+                    <br>
+                    Click <a href=""> here</a> to be redirected to form page.
+                </p>
+            </div>
+
+            <button class="collapsible">Confidentiality?</button>
+            <div class="content">
+                <p>The personal information of the citizen will be kept confidential and will only be used for
+                    the purpose of addressing complaints, suggestions, and for any follow-through actions.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+  </section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -110,6 +148,24 @@
         }
         function hideMenu(){
         navLinks.style.right="-200px";
+        }
+    </script>
+
+    <!-- JavaScript for Toggle Collapse Section -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+    
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            }else{
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
         }
     </script>
 </body>

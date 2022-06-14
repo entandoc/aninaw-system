@@ -11,7 +11,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/css/login.css">
   
-  <title>Aninaw | Admin Login</title>
+  <title>Admin Login</title>
 </head>
 <body>
   <div class="nav">
@@ -24,7 +24,7 @@
         <div class="content">
           <h3>ADMIN LOGIN</h3>
           <form action="" method="post">
-            <input type="text" name="email" placeholder="Email" required autofocus="">
+            <input type="text" name="email" placeholder="User I.D." required autofocus="">
             <input type="password" name="pass" placeholder="Password" required autofocus="">
 
             <div class="login-btn">

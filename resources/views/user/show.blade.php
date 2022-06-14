@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- cdnjs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- cdnjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
-    <!-- Fontawesome cdn -->
-    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
-    
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="article.css">
+  <!-- Fontawesome cdn -->
+  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
 
-    <title>Aninaw News | Las Pinas</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="/css/article.css">
+
+  <title>Aninaw News Article</title>
 </head>
 <body>
     <section class="sub-header">
@@ -37,10 +40,10 @@
 
     <div class="container">
     <article>
-        <h4 class ="mb-4" id="category"><a href="">FRIENDSHIP ROUTE STICKERS</a></h4>
+        <!-- <h4 class ="mb-4" id="category"><a href="">FRIENDSHIP ROUTE STICKERS</a></h4> -->
         <h1>Las Pinas Denies Selling Friendship Route Stickers</h1>
         <h5>April 1, 2022 <br> by Metro Cities News</h5>
-        <img class="img-fluid rounded" src="images/news/n1.jpg">
+        <img class="img-fluid rounded" src="/images/news/n1.jpg">
         <section class="content">
             <p>Las Pinas cautioned motorists, who are using public or private roads as
                 alternative routes to ease or decongest traffic along the main thoroughfares
@@ -80,7 +83,7 @@
             </p>
         </section>
         <div class="button">
-            <a href="news.html"><i class="fas fa-arrow-left"></i> Go back</a>
+            <a href="/complaint/news"><i class="fas fa-arrow-left"></i> Go back</a>
         </div>
     </article>
     </div>
@@ -95,7 +98,7 @@
               <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Operating Hours</a></li>
-                <li><a href="#">Telephone Directory</a></li>
+                <li><a href="/directory">Telephone Directory</a></li>
               </ul>
             </div>
     
@@ -103,7 +106,7 @@
               <h4>Aninaw</h4>
               <ul>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">The Developers</a></li>
+                <li><a href="/complaint/about#developers">The Developers</a></li>
                 <li><a href="#">Privacy and Terms</a></li>
               </ul>
             </div>
@@ -112,7 +115,7 @@
               <h4>Get Help</h4>
               <ul>
                 <li><a href="#">FAQs</a></li>
-                <li><a href="form.html">Submit Form</a></li>
+                <li><a href="/complaint/create">Submit Form</a></li>
               </ul>
             </div>
     

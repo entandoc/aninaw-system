@@ -167,6 +167,19 @@
             </ul>
 
             <ul class="details">
+              <li class="topic">Location</li>
+              <li>Zapote</li>
+              <li>Zapote</li>
+              <li>Zapote</li>
+              <li>Zapote</li>
+              <li>Zapote</li>
+              <li>Zapote</li>
+              <li>Zapote</li>
+              <li>Zapote</li>
+              <li>Zapote</li>
+            </ul>
+
+            <ul class="details">
               <li class="topic">Nature of Complaint</li>
               <li>Delivered</li>
               <li>Pending</li>
@@ -179,21 +192,9 @@
               <li>Delivered</a></li>
             </ul>
 
-            <ul class="details">
-              <li class="topic">Total</li>
-              <li>$204.98</li>
-              <li>$24.55</li>
-              <li>$25.88</li>
-              <li>$170.66</li>
-              <li>$56.56</li>
-              <li>$44.95</li>
-              <li>$67.33</li>
-              <li>$23.53</li>
-              <li>$46.52</li>
-            </ul>
           </div>
           <div class="button">
-            <a href="#">See All</a>
+            <a href="/admin/requests">See All</a>
           </div>
         </div>
 

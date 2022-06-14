@@ -59,4 +59,8 @@ class ComplaintController extends Controller
     public function successMessage() {
         return view('user.success-message');
     }
+
+    public function faqs() {
+        return view('user.faqs');
+    }
 }

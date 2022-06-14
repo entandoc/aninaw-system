@@ -10,7 +10,10 @@
     
   <!-- Fontawesome cdn -->
   <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
-    
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
+
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="/css/news.css">
   
@@ -48,7 +51,7 @@
             <div>
               <h3>Las Pinas denies seeling friendship route stickers</h3>
               <p>Las Pinas cautioned motorists, who are using public or private roads as alternative routes to ease or decongest traffic along the main thoroughfares in the city, against dealing with unscrupulous pers...</p>
-              <a href = "article.html">Read More <span>>></span></a>
+              <a href = "/complaint/news/{id}">Read More <span>>></span></a>
             </div>
         </article>
       </div>
@@ -196,7 +199,7 @@
           <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Operating Hours</a></li>
-            <li><a href="#">Telephone Directory</a></li>
+            <li><a href="/directory">Telephone Directory</a></li>
           </ul>
         </div>
 
@@ -204,7 +207,7 @@
           <h4>Aninaw</h4>
           <ul>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">The Developers</a></li>
+            <li><a href="/complaint/about#developers">The Developers</a></li>
             <li><a href="#">Privacy and Terms</a></li>
           </ul>
         </div>
@@ -213,7 +216,7 @@
           <h4>Get Help</h4>
           <ul>
             <li><a href="#">FAQs</a></li>
-            <li><a href="form.html">Submit Form</a></li>
+            <li><a href="/complaint/create">Submit Form</a></li>
           </ul>
         </div>
 

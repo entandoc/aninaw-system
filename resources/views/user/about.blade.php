@@ -11,6 +11,9 @@
     <!-- Fontawesome cdn -->
     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
+
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="/css/about-aninaw.css">
 
@@ -44,17 +47,13 @@
             </div>
             <div class="content-one">
                 <div class="article-one">
-                    <h3>Our Vision</h3>
-                    <p>There is a need for transparency between a local government
-                        unit and its residents, where the former can be more involved
-                        and participate in making their city a better place to live in.
-                        There are social media platforms LGUs use to disseminate
-                        information regarding the city’s affairs. This system will
-                        provide a concept of two-way communication wherein LGUs provide
-                        information, and also, the citizens can formally issue complains
-                        that is regard to the city’s problems that frequently occurs;
-                        the citizens can also register recommendations that can help
-                        improve the city.
+                    <h3>Aninaw is a complaint and suggestion management system for the municipality
+                        of Las Pinas city. 
+                    </h3>
+                    <p>The system aims to aid the direct communication problem between the Las Pinas city
+                        local government unit and its residents. It aims to create and develop an application
+                        that will address the residents’s concerns when it comes to abuse, broken roads and bridges,
+                        certificates, permits, drugs, health, polutions, employee and public officials complaints, and many more. 
                     </p>
                     <div class="button">
                         <a href="">Read More</a>
@@ -98,7 +97,7 @@
     </section>
 
     <!-- The Developers -->
-    <section class="section-three">
+    <section class="section-three" id="developers">
         <div class="container-three">
             <div class="row-three">
                 <div class="title-three">
@@ -108,7 +107,7 @@
             <div class="team-card">
                 <div class="card">
                     <div class="image-section-three">
-                        <img src="/images/about-us/img1.png">
+                        <img src="/images/about-us/img1.svg">
                     </div>
                     <div class="content-three">
                         <h3>Erika Tandoc</h3>
@@ -120,7 +119,7 @@
 
                 <div class="card">
                     <div class="image-section-three">
-                        <img src="/images/about-us/img2.png">
+                        <img src="/images/about-us/img2.svg">
                     </div>
                     <div class="content-three">
                         <h3>Endrew Tolentino</h3>
@@ -132,7 +131,7 @@
 
                 <div class="card">
                     <div class="image-section-three">
-                        <img src="/images/about-us/img3.png">
+                        <img src="/images/about-us/img3.svg">
                     </div>
                     <div class="content-three">
                         <h3>Will Baulete</h3>
@@ -144,7 +143,7 @@
 
                 <div class="card">
                     <div class="image-section-three">
-                        <img src="/images/about-us/img4.png">
+                        <img src="/images/about-us/img4.svg">
                     </div>
                     <div class="content-three">
                         <h3>Raymund Cambronero</h3>
@@ -202,7 +201,7 @@
           <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Operating Hours</a></li>
-            <li><a href="#">Telephone Directory</a></li>
+            <li><a href="/directory">Telephone Directory</a></li>
           </ul>
         </div>
 
@@ -210,7 +209,7 @@
           <h4>Aninaw</h4>
           <ul>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">The Developers</a></li>
+            <li><a href="/complaint/about#developers">The Developers</a></li>
             <li><a href="#">Privacy and Terms</a></li>
           </ul>
         </div>
@@ -219,7 +218,7 @@
           <h4>Get Help</h4>
           <ul>
             <li><a href="#">FAQs</a></li>
-            <li><a href="form.html">Submit Form</a></li>
+            <li><a href="/complaint/create">Submit Form</a></li>
           </ul>
         </div>
 

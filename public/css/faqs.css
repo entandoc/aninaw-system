@@ -3,50 +3,59 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-.header{
-    min-height: 100vh;
+/* Sub-header */
+.sub-header{
+    height: 50vh;
     width: 100%;
-    background-image: url(/images/home/background.svg);
+    background-image: url(/images/sub-header-banner.svg);
     background-position: center;
     background-size: cover;
-    position: relative;
+    text-align: center;
 }
 
-/* Navigation Bar */
+.sub-header h2{
+    padding-top: 8%;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
+}
+  
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
-
+  
 nav h1{
     font-size: 35px;
     font-weight: 800;
     color: #2009ef;
 }
-
+  
 .nav-links{
     flex: 1;
     text-align: right;
 }
-
+  
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-
+  
 .nav-links ul li a{
     color: #000000;
     text-decoration: none;
     font-weight: 700;
 }
-
+  
 .nav-links ul li::after{
     content: '';
     width: 0%;
@@ -56,7 +65,7 @@ nav h1{
     margin: auto;
     transition: 0.5s;
 }
-
+  
 .nav-links ul li:hover::after{
     width: 100%;
 }
@@ -71,140 +80,12 @@ nav h1{
     color: #ffffff;
 }
 
-.text-box{
-    width: 90%;
-    color: #000000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-
-.text-box img{
-    height: 25%;
-    width: 25%;
-}
-
-.text-box h1{
-    font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #000000;
-}
- 
-.hero-btn{
-    display: inline-block;
-    font-weight: 700;
-    text-decoration: none;
-    background: #2009ef !important;
-    color: white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 14px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-
-.hero-btn:hover{
-    background: #2009ef;
-    color: white;
-    text-decoration: none;
-    box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
-}
-
 nav .fa{
     display: none;
 }
 
-/* Guide Section */
-.guide-h1{
-    color: #000000;
-    font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-}
-
-.guide{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.guide-col{
-    flex-basis: 31%;
-    margin-bottom: 5%;
-    text-align: left;
-}
-
-.guide-col img{
-    width: 90%;
-    box-align: center;
-}
-
-.row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.row .guide-col p{
-    padding: 0;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-/* Call to Action */
-.cta{
-    margin: 100px auto;
-    padding: 100px 0;
-    width: 80%;
-    background-image: url(/images/home/banner.svg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.cta h1{
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 55px;
-    padding: 20px;
-}
-
-.cta p{
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-/* Departments */
-.departments-h1{
-    font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-}
-
 /* Departments Collapse */
-.departments-body{
+.faqs-body{
     text-align: justify;
     padding: 3rem 200px;
 }
@@ -215,7 +96,7 @@ nav .fa{
     background: none;
     color: black;
     font-family: 'Oswald', sans-serif;
-    font-size: 27px;
+    font-size: 24px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -253,12 +134,18 @@ nav .fa{
 
 .content p{
     padding-top: 1.5rem;
+    padding-bottom: 3rem;
 }
 
-.departments-ul{
-    text-align: justify;
-    list-style-type: square;
-    margin-left: 40px;
+.content a{
+    color: #2009ef;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.content a:hover{
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -370,57 +257,20 @@ ul{
     .nav-links ul{
         padding: 30px;
     }
-    .text-box h1{
-        font-size: 40px;
-    }
-    .text-box img{
-        height: 60%;
-        width: 60%;
-    }
-    .text-box p{
-        font-size: 17px;
-    }
 }
 
-/* Guide Responsiveness */
-@media(max-width: 700px){
-    .row{
-        flex-flow: column;
-    }
-    .guide-h1{
-        font-size: 33px;
-    }
-}
-
-/* Call to Action Responsiveness */
-@media(max-width: 700px){
-    .cta h1{
-        font-size: 30px;
-    }
-    .cta p{
-        font-size: 16px;
-        padding: 0 10px;
-    }
-}
-
-/* Departments Responsiveness */
-@media(max-width: 700px){
-    .departments-body{
-        padding: 3rem 1rem;
-    }
-    .departments-h1{
-        font-size: 33px;
+/* FAQs Responsiveness */
+@media(max-width: 1080px){
+    .faqs-body{
+        padding: 3rem 2rem;
     }
     .collapsible{
         width: 100%;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 500;
     }
     .content p{
-        font-size: 16px;
-    }
-    .departments-ul{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -430,5 +280,3 @@ ul{
       width: 100%;
     }
 }
-
-

@@ -322,7 +322,7 @@
                     <ul>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Operating Hours</a></li>
-                        <li><a href="#">Telephone Directory</a></li>
+                        <li><a href="/directory">Telephone Directory</a></li>
                     </ul>
                 </div>
 
@@ -339,7 +339,7 @@
                     <h4>Get Help</h4>
                     <ul>
                         <li><a href="#">FAQs</a></li>
-                        <li><a href="form.html">Submit Form</a></li>
+                        <li><a href="/complaint/create">Submit Form</a></li>
                     </ul>
                 </div>
 

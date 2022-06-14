@@ -25,14 +25,19 @@ Route::get('/complaint/create', [ComplaintController::class, 'create']);
 Route::get('/complaint/about', [ComplaintController::class, 'showAbout']);
 Route::post('/form', [ComplaintController::class, 'store']);
 Route::get('/directory', [ComplaintController::class, 'telephoneDirectory']);
-Route::get('/successsful', [ComplaintController::class, 'successMessage']);
+Route::get('/successful', [ComplaintController::class, 'successMessage']);
+Route::get('/faqs', [ComplaintController::class, 'faqs']);
 
 /* Admin Module */
+Route::get('/admin/login', [AdminController::class, 'login']);
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
 Route::get('/admin/requests', [AdminController::class, 'complaintReqs']);
 Route::get('/admin/approved', [AdminController::class, 'approvedComplaints']);
 Route::get('/admin/news', [AdminController::class, 'newsAccess']);
 Route::get('/admin/users', [AdminController::class, 'adminUsers']);
 Route::get('/admin/view/requests', [AdminController::class, 'viewRequests']);
+Route::get('/admin/view/approved', [AdminController::class, 'viewApproved']);
+Route::get('/admin/view/article', [AdminController::class, 'viewArticle']);
+Route::get('/admin/users/edit', [AdminController::class, 'editUser']);
 
 /* Department Module */
