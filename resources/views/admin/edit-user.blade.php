@@ -92,12 +92,9 @@
             <div class="wrapper">
                 <form action="" method="get">
                     <div class="container">
-                        <div class="input-box">
-                            <input type="text" placeholder="Enter your name" required>
-                        </div>
-
-                        <div class="input-box">
-                            <input type="text" placeholder="Enter your email" required>
+                        <h2>Change Password</h2>
+                        <div class="input">
+                            <p>aninaw.admin@gmail.com</p>
                         </div>
 
                         <div class="input-box">

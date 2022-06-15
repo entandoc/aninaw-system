@@ -97,8 +97,8 @@
                             <th>Name</th>
                             <th>Location</th>
                             <th>Nature of Complaint</th>
+                            <th>Status</th>
                             <th>View</th>
-                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -109,7 +109,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
                         <tr>
@@ -119,7 +118,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
                         <tr>
@@ -129,7 +127,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
                         <tr>
@@ -139,7 +136,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
                         <tr>
@@ -149,7 +145,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
                         <tr>
@@ -159,7 +154,6 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
                     </tbody>
                 </table>

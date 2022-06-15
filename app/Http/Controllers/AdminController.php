@@ -45,4 +45,8 @@ class AdminController extends Controller
     public function editUser() {
         return view('admin.edit-user');
     }
+
+    public function postNews() {
+        return view('admin.post-news');
+    }
 }
