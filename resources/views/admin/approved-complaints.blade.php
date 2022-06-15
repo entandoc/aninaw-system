@@ -108,7 +108,8 @@
                             <td data-label="Name">Snow, Jon</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
+                            <td data-label="Status"><p class="status status-pending">Pending</p></td>
+                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
                         </tr>
 
                         <tr>
@@ -117,7 +118,8 @@
                             <td data-label="Name">Lannister, Tyrion</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
+                            <td data-label="Status"><p class="status status-on-going">On Going</p></td>
+                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
                         </tr>
 
                         <tr>
@@ -126,7 +128,8 @@
                             <td data-label="Name">Stark, Arya</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
+                            <td data-label="Status"><p class="status status-completed">Completed</p></td>
+                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
                         </tr>
 
                         <tr>
@@ -135,7 +138,8 @@
                             <td data-label="Name">Targaryen, Daenerys</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
+                            <td data-label="Status"><p class="status status-pending">Pending</p></td>
+                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
                         </tr>
 
                         <tr>
@@ -144,7 +148,8 @@
                             <td data-label="Name">The Hound</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
+                            <td data-label="Status"><p class="status status-on-going">On Going</p></td>
+                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
                         </tr>
 
                         <tr>
@@ -153,7 +158,8 @@
                             <td data-label="Name">Snow, Jon</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/approved" class="btn" id="view">View</td>
+                            <td data-label="Status"><p class="status status-completed">Completed</p></td>
+                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
                         </tr>
                     </tbody>
                 </table>

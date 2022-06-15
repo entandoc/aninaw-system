@@ -67,7 +67,7 @@
                     <td data-label="Date Submitted">01-02-2022</td>
                     <td data-label="Subject of Complaint">Streetlights</td>
                     <td data-label="Location">Talon Uno</td>
-                    <td data-label="Status"><p class="status status-on-process">On Process</p></td>
+                    <td data-label="Status"><p class="status status-on-going">On Going</p></td>
                 </tr>
 
                 <tr>
@@ -99,7 +99,7 @@
                     <td data-label="Date Submitted">01-05-2022</td>
                     <td data-label="Subject of Complaint">Neighbor</td>
                     <td data-label="Location">Almanza</td>
-                    <td data-label="Status"><p class="status status-on-process">On Process</p></td>
+                    <td data-label="Status"><p class="status status-on-going">On Going</p></td>
                 </tr>
 
                 <tr>
@@ -107,7 +107,7 @@
                     <td data-label="Date Submitted">01-05-2022</td>
                     <td data-label="Subject of Complaint">Neighbor</td>
                     <td data-label="Location">Almanza</td>
-                    <td data-label="Status"><p class="status status-on-process">On Process</p></td>
+                    <td data-label="Status"><p class="status status-on-going">On Going</p></td>
                 </tr>
 
                 <tr>

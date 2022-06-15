@@ -161,13 +161,6 @@
         
                     <div class="container">
                         <div class="checkbox">
-                            <i class='bx bxs-checkbox-checked' id="bx-check"></i>
-                            <label id="terms-check">Terms & Conditions<span style="color: red;"> *</span></label>
-                        </div>
-                    </div>
-        
-                    <div class="container">
-                        <div class="checkbox">
                             <label>Anonymous (Optional)</label>
                         </div>
                     </div>
@@ -175,17 +168,34 @@
                     <div class="line"></div>
 
                     <div class="container-two">
-                        <label class="status-label">DEPARTMENT STATUS</label>
-                        <div class="status-div">
-                            <h4 class="status dept-status">Pending</h4>
+                        <h2 class="status-label">DEPARTMENT STATUS</h2>
+                        <div class="table-info">
+                            <table style="width:100%">
+                                <tr>
+                                    <td class="title">Location:</td>
+                                    <td>Almanza</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Subject of complaint:</td>
+                                    <td>Covid-19 Positivity in all aspect</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Status:</td>
+                                    <td><h4 class="status status-completed">Completed</h4></td>
+                                </tr>
+                            </table>
                         </div>
                         <div class="log-div">
-                            <h5 id="complaint-description"><span>Someone sexual assualted me while walking at the street near SM Soutmall.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, delectus.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vel excepturi
-                                aspernatur officiis ipsam aut, nam ducimus enim ipsa similique quas dolor iste
-                                laudantium commodi voluptatibus optio, deserunt modi reiciendis.</span>
-                            </h5>
+                            <table class="log-table" style="width:100%">
+                                <tr class="log-tr">
+                                    <td class="track">The complaint has been resolved</td>
+                                    <td>06-16-2022 9:30am</td>
+                                </tr>
+                                <tr class="log-tr">
+                                    <td class="track">Coordinated with police to investigate</td>
+                                    <td>06-16-2022 9:00am</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </form>

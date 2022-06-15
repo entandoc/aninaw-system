@@ -103,7 +103,11 @@
         
                     <div class="container">
                         <label>Location <span style="color: red;">*</span></label>    
-                        <p>Almanza</p>
+                        <div class="location-drp">
+                            <select name="slct" id="slct">
+                                <option value=""> Almanza</option>
+                            </select>
+                        </div>
                     </div>
         
                     <div class="container">
@@ -148,13 +152,6 @@
                     <div class="container">
                         <label>Attach a photo (Optional)</label>
                         <p> N/A</p>
-                    </div>
-        
-                    <div class="container">
-                        <div class="checkbox">
-                            <i class='bx bxs-checkbox-checked' id="bx-check"></i>
-                            <label id="terms-check">Terms & Conditions<span style="color: red;"> *</span></label>
-                        </div>
                     </div>
         
                     <div class="container">

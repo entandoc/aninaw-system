@@ -205,9 +205,30 @@ nav .sidebar-button i{
     color: #66b0ff;
 }
 
-.table tbody tr td #delete{
-    background: #f7d4d7;
-    color: #e05260;
+/* Status */
+.status{
+    border-radius: 3px;
+    padding: 0.3rem;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-pending{
+    background-color: #fcf49a;
+    color: #a88a02;
+}
+
+.status-on-going{
+    background-color: #fcd4a9;
+    color: #f57200;
+}
+
+.status-completed{
+    background-color: #c8e6c9;
+    color: #388e3c;
 }
 
 /* Modal */

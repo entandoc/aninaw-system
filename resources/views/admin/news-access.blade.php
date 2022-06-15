@@ -90,7 +90,7 @@
         <div class="home-content">
             <div class="table-container">
                 <div class="button">
-                    <a href="">POST AN ARTICLE</a>
+                    <a href="/admin/news/post">POST AN ARTICLE</a>
                 </div>
 
                 <table class="table">
@@ -100,7 +100,6 @@
                             <th>Date</th>
                             <th>Author</th>
                             <th>View</th>
-                            <th>Edit</th>
                             <th>Delete</th>
                         </tr>
                     </thead>
@@ -109,8 +108,7 @@
                             <td data-label="Title">Las Pinas denies selling friendship route</td>
                             <td data-label="Date">01-01-2022</td>
                             <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/view/article" class="btn" id="view">View</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
@@ -118,8 +116,7 @@
                             <td data-label="Title">Las Pinas denies selling friendship route</td>
                             <td data-label="Date">01-01-2022</td>
                             <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/view/article" class="btn" id="view">View</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
@@ -127,8 +124,7 @@
                             <td data-label="Title">Las Pinas denies selling friendship route</td>
                             <td data-label="Date">01-01-2022</td>
                             <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/view/article" class="btn" id="view">View</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
@@ -136,8 +132,7 @@
                             <td data-label="Title">Las Pinas denies selling friendship route</td>
                             <td data-label="Date">01-01-2022</td>
                             <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/view/article" class="btn" id="view">View</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
@@ -145,8 +140,7 @@
                             <td data-label="Title">Las Pinas denies selling friendship route</td>
                             <td data-label="Date">01-01-2022</td>
                             <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/view/article" class="btn" id="view">View</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
 
@@ -154,8 +148,7 @@
                             <td data-label="Title">Las Pinas denies selling friendship route</td>
                             <td data-label="Date">01-01-2022</td>
                             <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/view/article" class="btn" id="view">View</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
                             <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
                     </tbody>

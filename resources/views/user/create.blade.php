@@ -233,6 +233,7 @@
         });
     </script>
 
+    <!-- JavaScript for Select list -->
     <script>
         function populate(s1,s2){
             var s1 = document.getElementById(s1);

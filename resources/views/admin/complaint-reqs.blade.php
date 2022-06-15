@@ -109,7 +109,7 @@
                             <td data-label="Name">Snow, Jon</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/requests" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
                             <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
                             <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
@@ -120,7 +120,7 @@
                             <td data-label="Name">Lannister, Tyrion</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/requests" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
                             <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
                             <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
@@ -131,7 +131,7 @@
                             <td data-label="Name">Stark, Arya</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/requests" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
                             <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
                             <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
@@ -142,7 +142,7 @@
                             <td data-label="Name">Targaryen, Daenerys</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/requests" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
                             <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
                             <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
@@ -153,7 +153,7 @@
                             <td data-label="Name">The Hound</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/requests" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
                             <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
                             <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
@@ -164,7 +164,7 @@
                             <td data-label="Name">Snow, Jon</td>
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/view/requests" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
                             <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
                             <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
                         </tr>
