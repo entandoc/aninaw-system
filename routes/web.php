@@ -40,6 +40,8 @@ Route::get('/admin/news/post', [AdminController::class, 'postNews']);
 Route::get('/admin/news/article', [AdminController::class, 'viewArticle']);
 Route::get('/admin/users', [AdminController::class, 'adminUsers']);
 Route::get('/admin/users/edit', [AdminController::class, 'editUser']);
+Route::get('/admin/users/add', [AdminController::class, 'addUser']);
 
 
 /* Department Module */
+Route::get('/department/dashboard', [DepartmentController::class, 'dashboard']);

@@ -120,56 +120,57 @@ nav .sidebar-button i{
     padding-top: 104px;
 }
 
-/* Form Body */
-.wrapper{
-  padding: 0 10px;
+/* Body */
+.home-section .home-content{
+  position: relative;
+  padding-top: 104px;
 }
 
-.con-container{
-  padding: 0 10px;
-  width: 100%;
-  max-width: 700px;
-  margin: 20px auto;
-  padding: 70px;
-  background-image: url(/images/form/f1.svg);
-  background-size: cover;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.container{
+/* Container Two */
+.container-two{
   padding: 0 10px;
   width: 100%;
   max-width: 700px;
   margin: 20px auto;
   padding: 30px;
-  background-color: white;
   border: 1px solid lightgray;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.container h2{
+.status-label{
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
-.container .input{
-  width: 140px;
-  border: 1px solid gray;
-  border-radius: 2px;
-  text-align: center;
+/* Form */
+.edit-pwd{
+  padding-top: 2rem;
 }
 
-.input p{
-  color: gray;
-  text-align: center;
-  font-size: 14px;
+.form-group{
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.input-box{
-  text-align: center;
-  margin-bottom: 10px;
-  padding: 0 20px;
+.form-group label{
+  padding-right: 5rem;
+  padding-bottom: 15px;
+}
+
+.form-group input{
+  width: 100%;
+  padding: 8px;
+}
+
+/* Button */
+button{
+  float: right;
+  padding: 8px 25px;
+  font-weight: bold;
 }
 
 /* Responsive */

@@ -89,24 +89,26 @@
         </nav>
 
         <div class="home-content">
-            <div class="wrapper">
-                <form action="" method="get">
-                    <div class="container">
-                        <h2>Change Password</h2>
-                        <div class="input">
-                            <p>aninaw.admin@gmail.com</p>
+            <div class="container-two">
+                <h3 class="status-label">EDIT USER'S PASSWORD</h3>
+                <form class="edit-pwd">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="password">New Password:</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="password" placeholder="New Password">
                         </div>
+                    </div>
 
-                        <div class="input-box">
-                            <input type="password" placeholder="New password" required>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="password">Confirm New Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="password" placeholder="Confirm Password">
                         </div>
-
-                        <div class="input-box">
-                            <input type="password" placeholder="Confirm password" required>
-                        </div>
-
-                        <div class="input-box button">
-                            <input type="Submit" value="Confirm">
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
                         </div>
                     </div>
                 </form>

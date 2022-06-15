@@ -89,69 +89,66 @@
 
         <div class="home-content">
             <div class="table-container">
+                <div class="button">
+                    <a href="/admin/users/add">ADD A USER</a>
+                </div>
+
                 <table class="table">
                     <thead>
                         <tr>
                             <th>User I.D.</th>
+                            <th>User Type</th>
                             <th>Department</th>
-                            <th>Email</th>
-                            <th>Password</th>
-                            <th>Edit</th>
+                            <th>Edit Password</th>
                             <th>Deactivate</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td data-label="User I.D.">A-0001</td>
-                            <td data-label="Department">Admin</td>
-                            <td data-label="Email">aninaw.admin@gmail.com</td>
-                            <td data-label="Password">password</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="User Type">Admin</td>
+                            <td data-label="Department"></td>
+                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
                             <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
                         </tr>
 
                         <tr>
                             <td data-label="User I.D.">A-0001</td>
-                            <td data-label="Department">HR Department</td>
-                            <td data-label="Email">aninaw.admin@gmail.com</td>
-                            <td data-label="Password">password</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="User Type">Moderator</td>
+                            <td data-label="Department">Police Department</td>
+                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
                             <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
                         </tr>
 
                         <tr>
                             <td data-label="User I.D.">A-0001</td>
+                            <td data-label="User Type">Moderator</td>
                             <td data-label="Department">Office of the City Mayor</td>
-                            <td data-label="Email">aninaw.admin@gmail.com</td>
-                            <td data-label="Password">password</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
                             <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
                         </tr>
 
                         <tr>
                             <td data-label="User I.D.">A-0001</td>
-                            <td data-label="Department">Admin</td>
-                            <td data-label="Email">aninaw.admin@gmail.com</td>
-                            <td data-label="Password">password</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="User Type">Moderator</td>
+                            <td data-label="Department">Office of the City Vice Mayor</td>
+                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
                             <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
                         </tr>
 
                         <tr>
                             <td data-label="User I.D.">A-0001</td>
-                            <td data-label="Department">Admin</td>
-                            <td data-label="Email">aninaw.admin@gmail.com</td>
-                            <td data-label="Password">password</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="User Type">Moderator</td>
+                            <td data-label="Department">aninaw.admin@gmail.com</td>
+                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
                             <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
                         </tr>
 
                         <tr>
                             <td data-label="User I.D.">A-0001</td>
-                            <td data-label="Department">Admin</td>
-                            <td data-label="Email">aninaw.admin@gmail.com</td>
-                            <td data-label="Password">password</td>
-                            <td data-label="Edit"><a href="" class="btn" id="edit">Edit</td>
+                            <td data-label="User Type">Moderator</td>
+                            <td data-label="Department">aninaw.admin@gmail.com</td>
+                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
                             <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
                         </tr>
                     </tbody>

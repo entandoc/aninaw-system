@@ -20,7 +20,7 @@
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="/css/view-article.css">
 
-  <title>News Article Access</title>
+  <title>News Access</title>
 </head>
 <body>
     <!-- Sidebar -->
@@ -46,14 +46,14 @@
             </li>
 
             <li>
-                <a href="/admin/approved"  class="active">
+                <a href="/admin/approved">
                 <i class='bx bx-message-square-check'></i>
                 <span class="links_name">Approved Complaints</span>
                 </a>
             </li>
 
             <li>
-                <a href="/admin/news">
+                <a href="/admin/news" class="active">
                 <i class='bx bx-news' ></i>
                 <span class="links_name">News</span>
                 </a>
@@ -86,7 +86,7 @@
         <nav>
           <div class="sidebar-button">
             <i class='bx bx-menu sidebarBtn'></i>
-            <span class="dashboard">Approved Complaints</span>
+            <span class="dashboard">News Access</span>
           </div>
         </nav>
 

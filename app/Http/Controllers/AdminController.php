@@ -18,35 +18,40 @@ class AdminController extends Controller
         return view('admin.complaint-reqs');
     }
 
-    public function approvedComplaints() {
-        return view('admin.approved-complaints');
-    }
-
-    public function newsAccess() {
-        return view('admin.news-access');
-    }
-
-    public function adminUsers() {
-        return view('admin.admin-users');
-    }
-
     public function viewRequests() {
         return view('admin.view-requests');
+    }
+
+    public function approvedComplaints() {
+        return view('admin.approved-complaints');
     }
 
     public function viewApproved() {
         return view('admin.view-approved');
     }
 
+    public function newsAccess() {
+        return view('admin.news-access');
+    }
+
     public function viewArticle() {
         return view('admin.view-article');
+    }
+
+    public function postNews() {
+        return view('admin.post-news');
+    }
+
+    public function adminUsers() {
+        return view('admin.admin-users');
     }
 
     public function editUser() {
         return view('admin.edit-user');
     }
 
-    public function postNews() {
-        return view('admin.post-news');
+    public function addUser() {
+        return view('admin.add-user');
     }
+
 }

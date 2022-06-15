@@ -8,6 +8,9 @@
     <!-- cdnjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- Fontawesome cdn -->
     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
 
@@ -43,6 +46,15 @@
 
     <!-- table -->
     <div class="table-container">
+        <div class="topnav">
+            <p>TRACK YOUR SUBMITTED COMPLAINT HERE</p>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Enter Reference No." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
         <table class="table">
             <thead>
                 <tr>
