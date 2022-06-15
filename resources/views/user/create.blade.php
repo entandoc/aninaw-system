@@ -63,7 +63,29 @@
                     <label>Location <span style="color: red;">*</span></label>    
                     <div class="space">
                         <!-- Dropdown -->
-                        <div id="dd1" required></div>
+                        <select name="slct" id="slct">
+                            <option value=""> Choose Location </option>
+                            <option value="loc1"> Almanza Uno </option>
+                            <option value="loc2"> Almanza Dos </option>
+                            <option value="loc3"> B.F. International Village </option>
+                            <option value="loc4"> Daniel Fajardo </option>
+                            <option value="loc5"> Elias Aldana </option>
+                            <option value="loc6"> Ilaya </option>
+                            <option value="loc7"> Manuyo Uno </option>
+                            <option value="loc8"> Manuyo Dos </option>
+                            <option value="loc9"> Pamplona Uno </option>
+                            <option value="loc10"> Pamplona Dos </option>
+                            <option value="loc11"> Pamplona Tres </option>
+                            <option value="loc12"> Pilar </option>
+                            <option value="loc13"> Pulang Lupa Uno </option>
+                            <option value="loc14"> Pulang Lupa Dos </option>
+                            <option value="loc15"> Talon Uno </option>
+                            <option value="loc16"> Talon Dos </option>
+                            <option value="loc17"> Talon Tres </option>
+                            <option value="loc18"> Talon Kuatro </option>
+                            <option value="loc19"> Talon Singko </option>
+                            <option value="loc20"> Zapote </option>
+                        </select>
                     </div>
                 </div>
 
@@ -199,92 +221,6 @@
         function hideMenu(){
         navLinks.style.right="-200px";
         }
-    </script>
-
-    <!-- Vanilla JavaScript for Dropdown List -->
-    <script>
-        function Dropdown(o){
-            this.options = o;
-
-            window.getdd = function(elem){
-                var id = elem.closest('.dropdown').parentElement.id;
-                return window.dropdowns[id];
-            }
-
-            this.init = function() {
-                this.elem = document.getElementById(this.options.id);
-
-                var val = this.options.val;
-                var html = `<div class="dropdown">
-                <div class="dropdown_value">${val}</div>
-                <div class="dropdown_arrow">▼</div>
-                <div class="dropdown_panel">
-                    <div class="dropdown_items">
-                </div>
-                </div>`;
-
-                this.elem.innerHTML = html;
-                var elem = this.elem;
-
-                /* Store a hash of dropdowns */
-                if (!window.dropdowns) window.dropdowns = {};
-                window.dropdowns[this.options.id] = this;
-
-                /* Get elements */
-                this.items = elem.querySelector(".dropdown_items");
-                this.arrow = elem.querySelector(".dropdown_arrow");
-                this.value = elem.querySelector(".dropdown_value");
-
-                /* Populate dropdown items */
-                var data = this.options.data;
-                html = "";
-                data.forEach(function(elem){
-                    html += `<div class="dropdown_item" onmousedown='var self=getdd(this); self.clicked(this)'>${elem}</div>`;
-                });
-                this.items.innerHTML = html;
-
-                var self = this;
-
-                /* To drop the dropdown */
-                this.elem.addEventListener('mousedown', function(){
-                    if (self.isVisible)
-                        self.hide();
-                    else
-                        self.show();
-                });
-            }
-
-            this.clicked = function(elem){
-                event.stopPropagation();
-                    this.hide();
-                    var newval = elem.innerHTML;
-                    this.value.innerHTML = newval;
-            }
-
-            this.show = function() {
-                    this.isVisible = true;
-                    this.items.style.transform = 'translate(0px, 0px)';
-                    this.arrow.style.transform = 'rotate(180deg)';
-            }
-
-            this.hide = function(){
-                    this.isVisible = false;
-                    this.items.style.transform = 'translate(0px, -255px)';
-                    this.arrow.style.transform = 'rotate(0deg)';
-            }
-
-            this.init();
-            return this;
-        }
-
-        var dd1 = new Dropdown({
-            id: 'dd1',
-            val: 'Location',
-            data: ['Almanza Uno', 'Almanza Dos', 'B.F. International Village', 'Daniel Fajardo', 'Elias Aldana',
-            'Ilaya', 'Manuyo Uno', 'Manuyo Dos', 'Pamplona Uno', 'Pamplona Dos', 'Pamplona Tres',
-            'Pilar', 'Pulang Lupa Uno', 'Pulang Lupa Dos', 'Talon Uno', 'Talon Dos', 
-            'Talon Tres', 'Talon Kuatro', 'Talon Singko', 'Zapote',]
-        });
     </script>
 
     <!-- JavaScript for Description -->
