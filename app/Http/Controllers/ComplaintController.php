@@ -63,4 +63,24 @@ class ComplaintController extends Controller
     public function faqs() {
         return view('user.faqs');
     }
+
+    public function operationalHours() {
+        return view('user.operational-hours');
+    }
+
+    public function terms() {
+        return view('user.terms');
+    }
+
+    public function aboutAninaw() {
+        return view('user.about-aninaw');
+    }
+
+    public function aboutLpc() {
+        return view('user.about-lpc');
+    }
+
+    public function privTerms() {
+        return view('user.priv-terms');
+    }
 }

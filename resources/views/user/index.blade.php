@@ -43,58 +43,6 @@
 
   <!-- News Main Content -->
   <main>
-    <section class = "main-container-left">
-      <h2>Top Stories</h2>
-      <div class = "container-top-left">
-        <article>
-          <img src = "/images/news/n1.jpg">
-            <div>
-              <h3>Las Pinas denies seeling friendship route stickers</h3>
-              <p>Las Pinas cautioned motorists, who are using public or private roads as alternative routes to ease or decongest traffic along the main thoroughfares in the city, against dealing with unscrupulous pers...</p>
-              <a href = "/complaint/news/{id}">Read More <span>>></span></a>
-            </div>
-        </article>
-      </div>
-
-      <div class = "container-bottom-left">
-        <article>
-          <img src = "/images/news/n2.jpg">
-            <div>
-              <h3>Zapote River among most improved estero in Metro Manila</h3>
-              <p>Nasungkit po ng Las Piñas City ang 4th Runner-up award sa entry nitong Zapote River sa katatapos na Award Ceremony ng "Gawad Taga-Ilog 2.0:Search for the Most Improved Estero in Metro Mani...</p>
-              <a href = "#">Read More <span>>></span></a>
-            </div>
-        </article>
-
-        <article>
-          <img src = "/images/news/n3.jpg">
-            <div>
-              <h3>Las Pinas celebrates 25th cityhood</h3>
-              <p>Las Piñas City celebrates its 25th year of cityhood on March 26 and its 115th founding anniversary on March 27, according to a report by Manila Bulletin. In line with the celebration of the ci...</p>
-              <a href = "#">Read More <span>>></span></a>
-            </div>
-        </article>
-
-        <article>
-          <img src = "/images/news/n4.jpg">
-            <div>
-              <h3>Las Pinas mobilizes bus for vaccination</h3>
-              <p>The Las Pinas City government deployed on Thursday (March 10) a “Bakuna Bus” to administer Covid-19 vaccines to residents who remain unvaccinated, according to a report by Manila Bulletin...</p>
-              <a href = "#">Read More <span>>></span></a>
-            </div>
-        </article>
-
-        <article>
-          <img src = "/images/news/n5.jpg">
-            <div>
-              <h3>Las Pinas holds mass anti-rabies vaccination</h3>
-              <p>A total of 1,072 dogs and cats received anti-rabies shots from the Las Pinas City Veterinary Office to give the community and these pets protection against animal rabies, according to a report by Mani...</p>
-              <a href = "#">Read More <span>>></span></a>
-            </div>
-        </article>
-      </div>
-    </section>
-
     <section class = "main-container-right">
       <h2>Latest Stories</h2>
           
@@ -215,7 +163,7 @@
         <div class="footer-col">
           <h4>Get Help</h4>
           <ul>
-            <li><a href="#">FAQs</a></li>
+            <li><a href="/faqs">FAQs</a></li>
             <li><a href="/complaint/create">Submit Form</a></li>
           </ul>
         </div>

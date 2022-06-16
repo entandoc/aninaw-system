@@ -15,9 +15,9 @@
   <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
 
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="/css/article.css">
+  <link rel="stylesheet" href="/css/about-aninaw2.css">
 
-  <title>Aninaw News Article</title>
+  <title>About Las Pinas</title>
 </head>
 <body>
     <section class="sub-header">
@@ -30,60 +30,49 @@
                   <li class="news"><a href="/complaint/news">News</a></li>
                   <li class="form"><a href="/complaint/create">Form</a></li>
                   <li class="complaints"><a href="/complaint">Complaints</a></li>
-                  <li class="about"><a href="/complaint/about">About</a></li>
+                  <li class="about active"><a href="/complaint/about">About</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h2>ANINAW NEWS ARTICLE</h2>
+        <h2>ABOUT LAS PINAS</h2>
     </section>
 
     <div class="container">
     <article>
-        <!-- <h4 class ="mb-4" id="category"><a href="">FRIENDSHIP ROUTE STICKERS</a></h4> -->
-        <h1>Las Pinas Denies Selling Friendship Route Stickers</h1>
-        <h5>April 1, 2022 <br> by Metro Cities News</h5>
-        <img class="img-fluid rounded" src="/images/news/n1.jpg">
+        <img class="img-fluid rounded" src="/images/about-us/a2.png">
         <section class="content">
-            <p>Las Pinas cautioned motorists, who are using public or private roads as
-                alternative routes to ease or decongest traffic along the main thoroughfares
-                in the city, against dealing with unscrupulous persons selling fake friendship
-                route stickers, according to a report by Manila Bulletin.
+            <p>From its days as the salt center of Manila to its bright present as a rapidly urbanizing
+                residential-commercial center, Las Piñas has indeed come a long way.
             </p>
 
-            <p>The city government issued the advisory after a fake Las Pinas City government
-                account was created, selling fake friendship stickers for P600 to P,1000.
+            <p>Known nationwide for its bamboo organ, salt beds, and jeepney factories, Las Piñas is
+                distinguished as one of Metro Manila’s fastest-growing communities. Continued economic
+                growth, coupled with effective local governance, have earned Las Piñas the distinction
+                of being Metro Manila’s cleanest and most peaceful city for three years straight.
             </p>
 
-            <p>The city government reiterated its call to motorists who wish to avail of a free
-                friendship route sticker to visit the link
-                <a id="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdIKlDn1eRXOON3YUwSzttcbVzmji144weA9EO85YeJOOG_wQ/viewform">bit.ly/LPCFriendshipStickerApp.</a>
+            <p>Although it became a city only in 1997, Las Piñas was one of the first settlements on
+                the outskirts of Manila. In 1797, during Spain’s four-hundred-year rule, a Spanish
+                missionary by the name of Fr. Diego Cera was brought to a barrio in Parañaque with a
+                mere 1,200 inhabitants—what was to later become Las Piñas. This holy man’s hard work,
+                persistence, and vision put the sleepy fishing village on the road to progress and
+                development, leading to the establishment of the Las Piñas Church in 1819, the six-year
+                construction of the bamboo organ, as well as the building of roads and bridges that spawned
+                the industries of dye making, salt production, and handicrafts.
             </p>
 
-            <p>Persons caught selling fake friendship route stickers will be slapped with a
-                fine of P3,000 to P5,000, according to city officials.
-            </p>
-
-            <p>The city government issued on March 17 guidelines on how to apply for the
-                friendship route stickers.
-            </p>
-
-            <p>It said the vehicle’s official receipt (OR) and Certificate of Registration
-                (CR) of the owner should be registered with Las Piñas address.
-            </p>
-
-            <p>Las Pinas residents can still avail of the stickers even as their vehicle is
-                not registered in the city by just showing driver’s license or any other documents
-                that will prove that the applicant is a city resident.
-            </p>
-
-            <p>Those that are not qualified to apply for the stickers are public utility jeepneys,
-                buses, taxis, school bus, delivery trucks and vans, tricycle and motorcycles,
-                as well as vehicles stamped with “FOR HIRE” notation.
+            <p>The years that followed were trying times for the barrio as it fell prey to roaming bandits,
+                and then in 1880, they lost hundreds of residents from outbreaks of cholera and smallpox.
+                More residents were lost sixteen years later when, during the Philippine revolution against
+                Spain, Las Piñas became the battlefield of several bloody encounters between the forces of
+                Gen. Emilio Aguinaldo and the Spanish troops. Some years after the Philippine-American war,
+                on March 27, 1907, Las Piñas was spun off from Parañaque and was proclaimed an independent
+                municipality.
             </p>
         </section>
         <div class="button">
-            <a href="/complaint/news"><i class="fas fa-arrow-left"></i> Go back</a>
+            <a href="/complaint/about"><i class="fas fa-arrow-left"></i> Go back</a>
         </div>
     </article>
     </div>

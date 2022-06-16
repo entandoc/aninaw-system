@@ -5,21 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- cdnjs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <!-- Fontawesome cdn -->
-    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
-    
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="/css/success-message.css">
 
-    <title>Aninaw Form</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/css/operational-hours.css">
+
+    <title>Operational Hours</title>
 </head>
 <body>
+
     <!-- Sub-header -->
     <section class="sub-header">
         <nav>
@@ -27,7 +22,7 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li class="home"><a href="/">Home</a></li>
+                    <li class="home active"><a href="/">Home</a></li>
                     <li class="news"><a href="/complaint/news">News</a></li>
                     <li class="form"><a href="/complaint/create">Form</a></li>
                     <li class="complaints"><a href="/complaint">Complaints</a></li>
@@ -36,25 +31,21 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h2>ANINAW FORM</h2>
+        <h2>LAS PINAS CITY HALL OPERATING HOURS</h2>
     </section>
 
-    <!-- Success Message -->
-    <section class="wrapper">
-        <div class="con-container"></div>
+    <!-- Body -->
+    <div class="body">
         <div class="container">
-            <h2>Form Successfuly Submitted!</h2>
-            <h3>Ticket Reference # 00001</h3>
-            <p>Your complaint/report has been submitted successfully and will now undergo approval.
-                Please wait for our email or call once your complaint/report is approved and ready for processing.
-                To check complaints/report, you can visit the <a href="/complaint">complaints table sheet</a>
-                page for viewing of status.
-            </p>
-            <br>
-            <br>
-            <p>If you have another complaint/report, just click <a href="/complaint/create">here.</a></p>
+            <img src="/images/about-us/a2.png" width="300" height="160">
+            <h2>WWWW.LASPINASCITY.GOV.PH</h2>
+            <p>Alabang-Zapote Rd., Las Pinas, <br> National Capital Region, Philippines</p>
+            <h3>laspinascitygov@yahoo.com</h3>
+
+            <h1>OPERATING HOURS</h1>
+            <p>Monday to Friday | 8am - 5pm</p>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -66,7 +57,7 @@
                     <ul>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Operating Hours</a></li>
-                        <li><a href="/directory">Telephone Directory</a></li>
+                        <li><a href="#">Telephone Directory</a></li>
                     </ul>
                 </div>
 
@@ -82,8 +73,8 @@
                 <div class="footer-col">
                     <h4>Get Help</h4>
                     <ul>
-                        <li><a href="/faqs">FAQs</a></li>
-                        <li><a href="/complaint/create">Submit Form</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="form.html">Submit Form</a></li>
                     </ul>
                 </div>
 

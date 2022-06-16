@@ -86,34 +86,65 @@ nav .fa{
 
 /* Body */
 .body{
-    text-align: center;
-    padding: 5rem 0;
+    padding: 5rem 10rem;
 }
 
 .container h2{
-    color: #2009ef;
-    margin-top: 2rem;
     font-family: 'Oswald', sans-serif;
-    font-size: 25px;
+    font-size: 22px;
     letter-spacing: 1px;
+}
+
+.container h3{
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.container span{
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .container p{
-    margin-top: 15px;
-}
-.container h3{
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: 600;
+    margin-top: 1.5rem;
+    font-size: 15px;
+    line-height: 2;
 }
 
-.container h1{
-    margin-top: 2rem;
-    font-family: 'Oswald', sans-serif;
-    font-size: 28px;
-    letter-spacing: 1px;
+.container ul{
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    font-size: 15px;
+    line-height: 2;
 }
 
+.container li{
+    list-style: disc;
+    padding-left: 1rem;
+}
+
+.button{
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #bbbbbb;
+    color: #737373;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.button a:hover{
+    box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
+}
+
+.button i{
+    font-size: smaller;
+}
 
 /* Footer */
 .footer{
@@ -223,6 +254,12 @@ ul{
     }
     .nav-links ul{
         padding: 30px;
+    }
+}
+
+@media(max-width: 786px){
+    .body{
+        padding: 5rem 2rem;
     }
 }
 

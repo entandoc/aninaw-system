@@ -23,10 +23,15 @@ Route::get('/complaint/news', [ComplaintController::class, 'index']);
 Route::get('/complaint/news/{id}', [ComplaintController::class, 'show']);
 Route::get('/complaint/create', [ComplaintController::class, 'create']);
 Route::get('/complaint/about', [ComplaintController::class, 'showAbout']);
+Route::get('/complaint/about/aninaw', [ComplaintController::class, 'aboutAninaw']);
+Route::get('/complaint/about/laspinas', [ComplaintController::class, 'aboutLpc']);
 Route::post('/form', [ComplaintController::class, 'store']);
+Route::get('/form/terms', [ComplaintController::class, 'terms']);
 Route::get('/directory', [ComplaintController::class, 'telephoneDirectory']);
 Route::get('/successful', [ComplaintController::class, 'successMessage']);
 Route::get('/faqs', [ComplaintController::class, 'faqs']);
+Route::get('/operationalhours', [ComplaintController::class, 'operationalHours']);
+Route::get('/privacyterms', [ComplaintController::class, 'privTerms']);
 
 /* Admin Module */
 Route::get('/admin/login', [AdminController::class, 'login']);

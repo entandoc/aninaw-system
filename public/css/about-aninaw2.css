@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* Sub-header */
+/* Sub header */
 .sub-header{
     height: 50vh;
     width: 100%;
@@ -24,48 +24,48 @@
     letter-spacing: 1px;
     font-family: 'Oswald', sans-serif;
 }
-  
+
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
-  
+
 nav h1{
     font-size: 35px;
     font-weight: 800;
     color: #2009ef;
 }
-  
+
 .nav-links{
     flex: 1;
     text-align: right;
 }
-  
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-  
+
 .nav-links ul li a{
     color: #000000;
     text-decoration: none;
     font-weight: 700;
 }
-  
+
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background-color: #2009ef;
+    background: #2009ef;
     display: block;
     margin: auto;
     transition: 0.5s;
 }
-  
+
 .nav-links ul li:hover::after{
     width: 100%;
 }
@@ -79,41 +79,93 @@ nav h1{
 .nav-links ul li.active a{
     color: #ffffff;
 }
-
+  
 nav .fa{
     display: none;
 }
 
-/* Body */
-.body{
+/* Article */
+.container{
+    padding-top: 5rem;
+}
+
+article{
+    width: 100%;
+    padding: 2% 20% 10%;
     text-align: center;
-    padding: 5rem 0;
 }
 
-.container h2{
-    color: #2009ef;
-    margin-top: 2rem;
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
+article #category{
+    padding-bottom: 1rem;
+    text-align: left;
     letter-spacing: 1px;
 }
 
-.container p{
-    margin-top: 15px;
+article #category a{
+    text-decoration: none;
+    color: #ffffff; 
+    background-color: #2009ef;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 13px;
 }
-.container h3{
-    margin-top: 15px;
-    font-size: 16px;
+
+article h1{
+    font-size: 35px;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+article h5{
+    padding-bottom: 5rem;
+    font-size: 123x;
+    text-align: left;
+    color: #737373;
+}
+
+.content p{
+    text-align: left;
+    line-height: 1.5rem;
+    padding-bottom: 3%;
+}
+
+.content #link{
+    text-decoration: none;
     font-weight: 600;
+    color: #2009ef;
 }
 
-.container h1{
-    margin-top: 2rem;
-    font-family: 'Oswald', sans-serif;
-    font-size: 28px;
-    letter-spacing: 1px;
+.content #link:hover{
+    text-decoration: underline;
+    font-weight: 700;
 }
 
+article img{
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+.button{
+    margin-top: 30px;
+}
+
+.button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #bbbbbb;
+    color: #737373;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.button a:hover{
+    box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
+}
+
+.button i{
+    font-size: smaller;
+}
 
 /* Footer */
 .footer{
@@ -143,8 +195,9 @@ ul{
 .footer-col h4{
 	font-size: 14px;
 	color: #737373;
+    font-weight: bold !important;
 	margin-bottom: 25px;
-	font-weight: 600;
+	font-weight: 500;
 	position: relative;
 }
 
@@ -195,7 +248,7 @@ ul{
     color: #737373 !important;
 }
 
-/* Navigation Bar Responsiveness */
+/* Navigation Bar Responsivess */
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
@@ -226,9 +279,41 @@ ul{
     }
 }
 
+/* Article Responsiveness */
+@media screen and (max-width: 768px){
+    article{
+        width: 100%;
+        padding: 2% 10% 10%;
+        text-align: center;
+    }
+    article h1{
+        font-size: 25px;
+        padding-bottom: 1rem;
+    }
+    article img{
+        width: 100%;
+    }
+    .content p{
+        padding-bottom: 4%;
+        font-size: 14px;
+    }
+    .button{
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    article{
+        width: 100%;
+        padding: 2% 8% 8%;
+        text-align: center;
+    }
+}
+
 /* Footer Responsiveness */
 @media(max-width: 574px){
     .footer-col{
       width: 100%;
     }
 }
+

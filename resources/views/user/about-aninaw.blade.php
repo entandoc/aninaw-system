@@ -15,9 +15,9 @@
   <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
 
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="/css/article.css">
+  <link rel="stylesheet" href="/css/about-aninaw2.css">
 
-  <title>Aninaw News Article</title>
+  <title>About Aninaw</title>
 </head>
 <body>
     <section class="sub-header">
@@ -30,60 +30,44 @@
                   <li class="news"><a href="/complaint/news">News</a></li>
                   <li class="form"><a href="/complaint/create">Form</a></li>
                   <li class="complaints"><a href="/complaint">Complaints</a></li>
-                  <li class="about"><a href="/complaint/about">About</a></li>
+                  <li class="about active"><a href="/complaint/about">About</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h2>ANINAW NEWS ARTICLE</h2>
+        <h2>ABOUT ANINAW</h2>
     </section>
 
     <div class="container">
     <article>
-        <!-- <h4 class ="mb-4" id="category"><a href="">FRIENDSHIP ROUTE STICKERS</a></h4> -->
-        <h1>Las Pinas Denies Selling Friendship Route Stickers</h1>
-        <h5>April 1, 2022 <br> by Metro Cities News</h5>
-        <img class="img-fluid rounded" src="/images/news/n1.jpg">
+        <img class="img-fluid rounded" src="/images/about-us/a1.svg">
         <section class="content">
-            <p>Las Pinas cautioned motorists, who are using public or private roads as
-                alternative routes to ease or decongest traffic along the main thoroughfares
-                in the city, against dealing with unscrupulous persons selling fake friendship
-                route stickers, according to a report by Manila Bulletin.
+            <p>Aninaw is a complaint and suggestion management system for the municipality
+                of Las Pinas city. 
+            </p>
+            <p>The system aims to aid the direct communication problem between the Las Pinas city
+                local government unit and its residents. It aims to create and develop an application
+                that will address the residents’s concerns when it comes to abuse, broken roads and bridges,
+                certificates, permits, drugs, health, polutions, employee and public officials complaints, and many more. 
             </p>
 
-            <p>The city government issued the advisory after a fake Las Pinas City government
-                account was created, selling fake friendship stickers for P600 to P,1000.
-            </p>
-
-            <p>The city government reiterated its call to motorists who wish to avail of a free
-                friendship route sticker to visit the link
-                <a id="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdIKlDn1eRXOON3YUwSzttcbVzmji144weA9EO85YeJOOG_wQ/viewform">bit.ly/LPCFriendshipStickerApp.</a>
-            </p>
-
-            <p>Persons caught selling fake friendship route stickers will be slapped with a
-                fine of P3,000 to P5,000, according to city officials.
-            </p>
-
-            <p>The city government issued on March 17 guidelines on how to apply for the
-                friendship route stickers.
-            </p>
-
-            <p>It said the vehicle’s official receipt (OR) and Certificate of Registration
-                (CR) of the owner should be registered with Las Piñas address.
-            </p>
-
-            <p>Las Pinas residents can still avail of the stickers even as their vehicle is
-                not registered in the city by just showing driver’s license or any other documents
-                that will prove that the applicant is a city resident.
-            </p>
-
-            <p>Those that are not qualified to apply for the stickers are public utility jeepneys,
-                buses, taxis, school bus, delivery trucks and vans, tricycle and motorcycles,
-                as well as vehicles stamped with “FOR HIRE” notation.
+            <p>The goal of the Aninaw developers is to establish a complaints/ suggestion base website for las pinas
+                citizens. An article written by Gelb et al. (2019), suggests that one of the most crucial
+                demurrals of administrative law is the advancing of the quality, impact, and efficiency of
+                public service. One way to resolve this hindrance in advancement is through involvement of
+                the people by putting them at the center of governance. This can be accomplished by giving
+                the people the power through governance participation and incentivizing conveyance,
+                transparency through information accessibility, allowing the citizens to have knowledge
+                of service level and standard, and the inclusion of the people in policy making and
+                reinforcement. The purpose of the website is to help both the las pinas government and
+                the citizens amidst covid 19 to raise their concern and complaints virtually through the
+                website. Citizens will not fall in line anymore in the offices of las pinas just to submit
+                a complaint, users will be able to use a user-friendly website and less hassle for them in
+                submitting their complaints through face to face.
             </p>
         </section>
         <div class="button">
-            <a href="/complaint/news"><i class="fas fa-arrow-left"></i> Go back</a>
+            <a href="/complaint/about"><i class="fas fa-arrow-left"></i> Go back</a>
         </div>
     </article>
     </div>
