@@ -204,7 +204,7 @@
             </p>
 
             <div class="button">
-                <a href="/complaint/create"><i class="fas fa-arrow-left"></i> Go back</a>
+                <a href="/"><i class="fas fa-arrow-left"></i> Go back</a>
             </div>
 
         </div>

@@ -139,60 +139,61 @@
       <div class="sales-boxes">
         <div class="recent-sales box">
           <div class="title">Recent Complaint Requests</div>
-          <div class="sales-details">
-            <ul class="details">
-              <li class="topic">Date</li>
-              <li>02 Jan 2021</li>
-              <li>02 Jan 2021</li>
-              <li>02 Jan 2021</li>
-              <li>02 Jan 2021</li>
-              <li>02 Jan 2021</li>
-              <li>02 Jan 2021</li>
-              <li>02 Jan 2021</li>
-              <li>02 Jan 2021</li>
-              <li>02 Jan 2021</li>
-            </ul>
+          <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Name</th>
+                          <th>Location</th>
+                          <th>Nature of Complaint</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td data-label="Date">1000</td>
+                          <td data-label="Name">01-01-2022</td>
+                          <td data-label="Location">Snow, Jon</td>
+                          <td data-label="Nature of Complaint">Almanza</td>
+                        </tr>
 
-            <ul class="details">
-              <li class="topic">Name</li>
-              <li>Alex Doe</li>
-              <li>David Mart</li>
-              <li>Roe Parter</li>
-              <li>Diana Penty</li>
-              <li>Martin Paw</li>
-              <li>Doe Alex</li>
-              <li>Aiana Lexa</li>
-              <li>Rexel Mags</li>
-              <li>Tiana Loths</li>
-            </ul>
+                        <tr>
+                          <td data-label="Date">1000</td>
+                          <td data-label="Name">01-01-2022</td>
+                          <td data-label="Location">Snow, Jon</td>
+                          <td data-label="Nature of Complaint">Almanza</td>
+                        </tr>
 
-            <ul class="details">
-              <li class="topic">Location</li>
-              <li>Zapote</li>
-              <li>Zapote</li>
-              <li>Zapote</li>
-              <li>Zapote</li>
-              <li>Zapote</li>
-              <li>Zapote</li>
-              <li>Zapote</li>
-              <li>Zapote</li>
-              <li>Zapote</li>
-            </ul>
+                        <tr>
+                          <td data-label="Date">1000</td>
+                          <td data-label="Name">01-01-2022</td>
+                          <td data-label="Location">Snow, Jon</td>
+                          <td data-label="Nature of Complaint">Almanza</td>
+                        </tr>
 
-            <ul class="details">
-              <li class="topic">Nature of Complaint</li>
-              <li>Delivered</li>
-              <li>Pending</li>
-              <li>Returned</li>
-              <li>Delivered</li>
-              <li>Pending</li>
-              <li>Returned</li>
-              <li>Delivered</a></li>
-              <li>Pending</a></li>
-              <li>Delivered</a></li>
-            </ul>
+                        <tr>
+                          <td data-label="Date">1000</td>
+                          <td data-label="Name">01-01-2022</td>
+                          <td data-label="Location">Snow, Jon</td>
+                          <td data-label="Nature of Complaint">Almanza</td>
+                        </tr>
 
-          </div>
+                        <tr>
+                          <td data-label="Date">1000</td>
+                          <td data-label="Name">01-01-2022</td>
+                          <td data-label="Location">Snow, Jon</td>
+                          <td data-label="Nature of Complaint">Almanza</td>
+                        </tr>
+
+                        <tr>
+                          <td data-label="Date">1000</td>
+                          <td data-label="Name">01-01-2022</td>
+                          <td data-label="Location">Snow, Jon</td>
+                          <td data-label="Nature of Complaint">Almanza</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
           <div class="button">
             <a href="/admin/requests">See All</a>
           </div>

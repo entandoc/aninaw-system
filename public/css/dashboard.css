@@ -256,6 +256,63 @@ nav .sidebar-button i{
   background: #100477;
 }
 
+/* Table */
+.table{
+  width: 100%;
+  font-size: 14px;
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.table thead tr th{
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.35px;
+  color: #000000;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.table tbody tr td{
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.35px;
+  padding: 8px;
+  text-align: center;
+}
+
+.table tbody tr{
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even){
+  background-color: #ffffff;
+}
+
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid gray;
+}
+
+.table tbody tr td .btn{
+  width: 70px;
+  text-decoration: none;
+  line-height: 35px;
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: 3px;
+}
+
+.table tbody tr td #view{
+  background: #cce5ff;
+  color: #66b0ff;
+}
+
+
 /* Right box */
 .home-content .sales-boxes .top-sales{
   width: 35%;
@@ -381,4 +438,3 @@ nav .sidebar-button i{
     width: calc(100% - 60px);
   }
 }
-

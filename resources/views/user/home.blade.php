@@ -239,8 +239,8 @@
         <div class="footer-col">
           <h4>Las Pinas City Hall</h4>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Operating Hours</a></li>
+            <li><a href="/complaint/about/laspinas">About Us</a></li>
+            <li><a href="/operationalhours">Operating Hours</a></li>
             <li><a href="/directory">Telephone Directory</a></li>
           </ul>
         </div>
@@ -248,9 +248,9 @@
         <div class="footer-col">
           <h4>Aninaw</h4>
           <ul>
-            <li><a href="#">About Us</a></li>
+            <li><a href="/complaint/about/aninaw">About Us</a></li>
             <li><a href="/complaint/about#developers">The Developers</a></li>
-            <li><a href="#">Privacy and Terms</a></li>
+            <li><a href="/privacyterms">Privacy and Terms</a></li>
           </ul>
         </div>
         

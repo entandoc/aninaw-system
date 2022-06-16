@@ -56,7 +56,7 @@
                         certificates, permits, drugs, health, polutions, employee and public officials complaints, and many more. 
                     </p>
                     <div class="button">
-                        <a href="">Read More</a>
+                        <a href="/complaint/about/aninaw">Read More</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                         cleanest and most peaceful city for three years straight.
                     </p>
                     <div class="button">
-                        <a href="">Read More</a>
+                        <a href="/complaint/about/laspinas">Read More</a>
                     </div>
                 </div>
             </div>
