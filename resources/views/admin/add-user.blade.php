@@ -94,14 +94,6 @@
             <div class="container-two">
                 <h3 class="status-label">ADD A USER</h3>
                 <form class="post-news">
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="i.d.">User I.D.</label>
-                        <div class="col-sm-10">
-                            <input type="i.d." class="form-control" id="i.d." placeholder="User I.D.">
-                        </div>
-                    </div>
-
-
                     <div class="radio-group">
                         <label class="control-label col-sm-2" for="date">User Type:</label>
                         <div class="form-radio">
@@ -137,14 +129,6 @@
                             </select>
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="password">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                        </div>
-                    </div>
-
                     
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">

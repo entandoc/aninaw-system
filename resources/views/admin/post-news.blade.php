@@ -102,20 +102,6 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label col-sm-2" for="date">Date:</label>
-                        <div class="col-sm-10">
-                            <input type="date" class="form-control" id="date" placeholder="Enter Date">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="date">Author:</label>
-                        <div class="col-sm-10">
-                            <input type="author" class="form-control" id="author" placeholder="Enter Author">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
                         <label class="control-label col-sm-2" for="date">Photo:</label>
                         <div class="insert-photo">
                             <a href="">
@@ -128,7 +114,6 @@
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="date">Content:</label>
                             <textarea placeholder="Content"></textarea>
-
                     </div>
                     
                     <div class="form-group">

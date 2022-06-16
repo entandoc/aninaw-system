@@ -29,14 +29,16 @@
 
         <ul class="nav-links">
             <li>
-                <span class="links_name">Dashboard</span>
-                <span class="links_name">Dashboard</span>
+                <a id="user">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">A-001</span>
+                </a>
             </li>
 
             <li>
-                <a href="/admin/dashboard" class="active">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="links_name">Dashboard</span>
+                <a href="/department/dashboard" class="active">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">Dashboard</span>
                 </a>
             </li>
 
@@ -53,7 +55,7 @@
         <nav>
           <div class="sidebar-button">
             <i class='bx bx-menu sidebarBtn'></i>
-            <span class="dashboard">Approved Complaints</span>
+            <span class="dashboard">Police Department</span>
           </div>
         </nav>
 
@@ -79,7 +81,7 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="Status"><p class="status status-pending">Pending</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/department/view" class="btn" id="view">View</td>
                         </tr>
 
                         <tr>
@@ -89,7 +91,7 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="Status"><p class="status status-on-going">On Going</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/department/view" class="btn" id="view">View</td>
                         </tr>
 
                         <tr>
@@ -99,7 +101,7 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="Status"><p class="status status-completed">Completed</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/department/view" class="btn" id="view">View</td>
                         </tr>
 
                         <tr>
@@ -109,7 +111,7 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="Status"><p class="status status-pending">Pending</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/department/view" class="btn" id="view">View</td>
                         </tr>
 
                         <tr>
@@ -119,7 +121,7 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="Status"><p class="status status-on-going">On Going</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/department/view" class="btn" id="view">View</td>
                         </tr>
 
                         <tr>
@@ -129,30 +131,13 @@
                             <td data-label="Location">Almanza</td>
                             <td data-label="Nature of Complaint">Garbage</td>
                             <td data-label="Status"><p class="status status-completed">Completed</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
+                            <td data-label="View"><a href="/department/view" class="btn" id="view">View</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
-
-    <!-- Delete Modal -->
-    <div class="container">
-        <input type="checkbox" id="check">
-        <div class="background"></div>
-        <div class="alert_box">
-            <div class="icon">
-                <i class="fas fa-exclamation"></i>
-            </div>
-            <header>Delete Approved Complaint</header>
-            <p>Are you sure you want to delete the approved complaint?</p>
-            <div class="btns">
-                <label for="check">Yes, Delete!</label>
-                <label for="check">Cancel</label>
-            </div>
-        </div>
-    </div>
 
     <!-- JavaScript for Sidebar Toggle -->  
     <script>

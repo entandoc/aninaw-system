@@ -45,3 +45,4 @@ Route::get('/admin/users/add', [AdminController::class, 'addUser']);
 
 /* Department Module */
 Route::get('/department/dashboard', [DepartmentController::class, 'dashboard']);
+Route::get('/department/view', [DepartmentController::class, 'complaintView']);
