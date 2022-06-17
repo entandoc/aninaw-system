@@ -83,4 +83,8 @@ class ComplaintController extends Controller
     public function privTerms() {
         return view('user.priv-terms');
     }
+
+    public function track() {
+        return view('user.track');
+    }
 }

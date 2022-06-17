@@ -363,7 +363,6 @@ nav .fa{
 .container-four .title-four{
     width: 100%;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .container-four .title-four h1{
@@ -383,10 +382,15 @@ nav .fa{
     display: block;
     margin: 5px auto;
 }
+.location{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
 
-.content-four{
-    float: left;
-    padding: 2rem 0;
+.location iframe{
+    width: 100%;
 }
 
 .content-four form{
@@ -401,7 +405,7 @@ nav .fa{
 }
 
 .form-control{
-    width: 345px;
+    width: 100%;
     background-color: #efefef;
     border-radius: 20px;
     padding: 0.7rem;
@@ -418,7 +422,7 @@ nav .fa{
 }
 
 .content-four textarea{
-    width: 100%;
+    width: 60%;
     height: 150px;
     padding: 15px;
     outline: none;
@@ -486,7 +490,6 @@ button:hover{
     text-decoration: none;
     box-shadow: -1px 0px 17px -3px rgba(0,0,0,0.69);
 }
-
 
 /* Footer */
 .footer{
@@ -680,11 +683,17 @@ ul{
         display: block;
         margin: auto;
     }
+    .content-four h3{
+        padding-top: 2rem;
+    }
     .content-four form div{
         grid-template-columns: 1fr;
     }
     .form-control{
         width: auto;
+    }
+    .content-four textarea{
+        width: 100%;
     }
     .image-section-four{
         float: none;
@@ -696,6 +705,15 @@ ul{
         display: block;
         object-fit: cover;
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 820px){
+    .content-four textarea{
+        width: 100%;
+    }
+    .content-four h3{
+        padding-top: 2rem;
     }
 }
 
@@ -712,6 +730,9 @@ ul{
         display: block;
         margin: auto;
     }
+    .content-four h3{
+        padding-top: 2rem;
+    }
     .content-four form div{
         grid-template-columns: 1fr;
     }
@@ -731,9 +752,17 @@ ul{
     }
 }
 
+@media screen and (min-width: 1024px){
+    .content-four textarea{
+        width: 60%;
+    }
+}
+
 /* Footer Responsiveness */
 @media(max-width: 574px){
     .footer-col{
       width: 100%;
     }
 }
+
+

@@ -19,6 +19,7 @@ use App\Models\Complaint;
 
 Route::get('/', [ComplaintController::class, 'home']);
 Route::get('/complaint', [ComplaintController::class, 'showApproved']);
+Route::get('/complaint/track', [ComplaintController::class, 'track']);
 Route::get('/complaint/news', [ComplaintController::class, 'index']);
 Route::get('/complaint/news/{id}', [ComplaintController::class, 'show']);
 Route::get('/complaint/create', [ComplaintController::class, 'create']);
