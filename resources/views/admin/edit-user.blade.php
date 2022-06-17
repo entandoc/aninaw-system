@@ -72,7 +72,7 @@
             </li>
 
             <li class="log_out">
-                <a href="#">
+                <a href="/admin/user">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
                 </a>
@@ -91,18 +91,20 @@
         <div class="home-content">
             <div class="container-two">
                 <h3 class="status-label">EDIT USER'S PASSWORD</h3>
-                <form class="edit-pwd">
+                <form class="edit-pwd" action="/admin/update" method="get">
+                    @csrf
                     <div class="form-group">
+                        <input type="hidden" name="user_id" value="{{ $user->user_id }}">
                         <label class="control-label col-sm-2" for="password">New Password:</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="password" placeholder="New Password">
+                            <input type="password" name="newPasskey" class="form-control" id="password" placeholder="New Password">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="password">Confirm New Password</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="password" placeholder="Confirm Password">
+                            <input type="password" name="confirmPasskey" class="form-control" id="password" placeholder="Confirm Password">
                         </div>
                     </div>
                     

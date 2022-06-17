@@ -71,7 +71,7 @@
             </li>
 
             <li class="log_out">
-                <a href="#">
+                <a href="/admin/logout">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
                 </a>
@@ -92,71 +92,76 @@
                 <div class="con-container"></div>
                 <form action="" method="get">
                     <div class="container">
-                        <label>Email <span style="color: red;">*</span></label>
-                        <p>erikanicole.tandoc@tup.edu.ph</p>
+                        <label>Email</label>
+                        <p>{{ $appeal->complainant->email }}</p>
                     </div>
         
                     <div class="container">
-                        <label>Name (Last, First, Middle) <span style="color: red;">*</span></label>
-                        <p>Tandoc, Erika Nicole, Lopez</p>
+                        <label>Name (Last, First, Middle)</label>
+                        <p>{{ $appeal->complainant->name }}</p>
                     </div>
         
                     <div class="container">
-                        <label>Location <span style="color: red;">*</span></label>    
+                        <label>Location</label>    
                         <div class="location-drp">
                             <select name="slct" id="slct">
-                                <option value=""> Almanza</option>
+                                <option value=""> {{ $appeal->address->barangay }}</option>
                             </select>
                         </div>
                     </div>
         
                     <div class="container">
-                        <label>Full Address <span style="color: red;">*</span></label>
-                        <p>Almanza, Las Pinas City</p>
+                        <label>Full Address</label>
+                        <p>{{ $appeal->address->home_address }}</p>
                     </div>
         
                     <div class="container">
-                        <label>Landmark <span style="color: red;">*</span></label>
-                        <p>SM Southmall</p>
+                        <label>Landmark</label>
+                        <p>{{ $appeal->address->landmark }}</p>
                     </div>
         
                     <div class="container">
-                        <label>Phone Number <span style="color: red;">*</span></label>
-                        <p>09123456789</p>
+                        <label>Phone Number</label>
+                        <p>{{ $appeal->complainant->phone_number }}</p>
                     </div>
         
                     <div class="container">
-                        <label>Subject of Complaint <span style="color: red;">*</span></label>
+                        <label>Subject of Complaint</label>
                         <div class="department-drp">
                             <select name="slct1" id="slct1">
-                                <option value=""> Police Department</option>
+                                <option value=""> {{ $appeal->complaint->department->name }}</option>
                             </select>
                         </div>
                         <div class="nature-drp">
                             <select name="slct2" id="slct2">
-                                <option value=""> Sexual Assault</option>
+                                <option value=""> {{ $appeal->complaint->subject }}</option>
                             </select>
                         </div>
                     </div>
         
                     <div class="container">
-                        <label>Complaint Description <span style="color: red;">*</span></label>
-                        <h5 id="complaint-description"><span>Someone sexual assualted me while walking at the street near SM Soutmall.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, delectus.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vel excepturi
-                            aspernatur officiis ipsam aut, nam ducimus enim ipsa similique quas dolor iste
-                            laudantium commodi voluptatibus optio, deserunt modi reiciendis.</span>
+                        <label>Complaint Description</label>
+                        <h5 id="complaint-description"><span>{{ $appeal->complaint->description }}</span>
                         </h5>
                     </div>
         
                     <div class="container">
-                        <label>Attach a photo (Optional)</label>
-                        <p> N/A</p>
+                        <label>Image</label>
+                        <img src="{{ asset('uploads/' . $appeal->complaint->image) }}" alt="">
                     </div>
         
                     <div class="container">
                         <div class="checkbox">
-                            <label>Anonymous (Optional)</label>
+                            <label>Anonymous: </label>
+                                @php
+                                    $temp = $appeal->complainant->name;
+                                @endphp
+                                @if($temp == 1)
+                                    <p>Yes</p>
+                                    @else
+                                        <p>No</p>
+                                @endif
+                            
                         </div>
                     </div>
                 </form>

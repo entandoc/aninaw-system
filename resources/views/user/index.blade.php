@@ -46,96 +46,26 @@
     <section class = "main-container-right">
       <h2>Latest Stories</h2>
           
+      @foreach($news as $item)
       <article>
         <h4>just in </h4>
         <div>
-          <h2>11,575 Las Pinas kids receive vaccines</h2>
-          <p>The Las Pinas City government vaccinated a total of 11,575 kids aged 5 to 11 against the coronavirus disease (COVID-19), according to a report by Manila Bulletin. Vice Mayor April Aguilar has be...</p>
-          <a href = "#">Read More <span>>></span></a>
+          <h2>{{ $item->title }}</h2>
+          <p style="text-overflow: ellipsis; overflow: hidden;">{{ $item->content }}</p>
+          <a href = "/complaint/news/{{ $item->id }}">Read More <span>>></span></a>
         </div>
-        <img src = "/images/news/n6.jpg">
+        <img src = "{{ asset('uploads/' . $item->image) }}">
       </article>
-
-      <article>
-        <h4>just in </h4>
-        <div>
-          <h2>DSWD recognizes Las Pinas 4p's program</h2>
-          <p>Ginawaran si Vice Mayor April Aguilar ng Plaque of Recognition ng DSWD-NCR dahil sa pagpasa ng City Ordinance 1759-21 Series of 2021 o kung tawagin ay Institutionalizing the Expanded Benefits of Panta...</p>
-          <a href = "#">Read More <span>>></span></a>
-        </div>
-        <img src = "/images/news/n7.jpg">
-      </article>
-
-      <article>
-        <h4>just in </h4>
-        <div>
-          <h2>Las Pinas opens safari-inspired vaccination sites for children</h2>
-          <p>The Las Piñas City government had set up safari and toys and carnival-inspired vaccination sites for the COVID-19 vaccination of children aged 5 to 11 on Tuesday, according to a report by ...</p>
-          <a href = "#">Read More <span>>></span></a>
-        </div>
-        <img src = "/images/news/n8.jpg">
-      </article>
-
-      <article>
-        <h4>just in </h4>
-        <div>
-          <h2>46,827 Las Pinas minors get full doses of vaccines</h2>
-          <p>The Las Piñas City government has already vaccinated a total of 46,827 minors aged 12 to 17, according to a report by Manila Bulletin. Citing the data of the City Health Office (CHO), May...</p>
-          <a href = "#">Read More <span>>></span></a>
-        </div>
-        <img src = "/images/news/n6.jpg">
-      </article>
-
-      <article>
-        <h4>just in </h4>
-        <div>
-          <h2>Las Pinas enforces face mask mandate</h2>
-          <p>Las Pinas City Mayor Imelda Aguilar on Friday, Jan. 7, said the city government has it made it mandatory for residents and visitors to wear their face masks, according to a report by Manila Bulletin...</p>
-          <a href = "#">Read More <span>>></span></a>
-        </div>
-        <img src = "/images/news/n3.jpg">
-      </article>
-
-      <article>
-        <h4>just in </h4>
-        <div>
-          <h2>Las Pinas school participates in pilot F2F classes</h2>
-          <p>The Las Piñas City conducted face-to-face classes for students taking up technical-vocational livelihood strand at Las Piñas National High School, according to a report by Manila Bulletin...</p>
-          <a href = "#">Read More <span>>></span></a>
-        </div>
-        <img src = "/images/news/n3.jpg">
-      </article>
-
-      <article>
-        <h4>just in </h4>
-        <div>
-          <h2>Las Pinas teams up with DA for supply chain program</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
-          <a href = "#">Read More <span>>></span></a>
-        </div>
-        <img src = "/images/news/n3.jpg">
-      </article>
-
-      <article>
-        <h4>just in </h4>
-        <div>
-          <h2>Las Pinas offers free cataract surgery</h2>
-          <p>The Las Piñas City government launched the blindness prevention program on Nov. 15, offering free cataract surgery for residents who are “green card” holders, according to a report...</p>
-          <a href = "#">Read More <span>>></span></a>
-        </div>
-        <img src = "/images/news/n10.jpg">
-      </article>
-    </section>
-  </main>
+      @endforeach
 
   <!-- Pagination -->
-  <div class="pagination">
+  <!-- <div class="pagination">
     <li class="page-item previous-page disable"><a class="page-link" href="">Prev</a></li>
     <li class="page-item current-page active"><a class="page-link" href="">1</a></li>
     <li class="page-item current-page"><a class="page-link" href="">2</a></li>
     <li class="page-item current-page"><a class="page-link" href="">3</a></li>
     <li class="page-item next-page"><a class="page-link" href="">Next</a></li>
-  </div>
+  </div> -->
 
   <!-- Footer -->
   <footer class="footer">

@@ -23,9 +23,10 @@
       <div class="main">
         <div class="content">
           <h3>ADMIN LOGIN</h3>
-          <form action="" method="post">
-            <input type="text" name="email" placeholder="User I.D." required autofocus="">
-            <input type="password" name="pass" placeholder="Password" required autofocus="">
+          <form action="/admin/authentication" method="get">
+            @csrf
+            <input type="text" name="user_id" placeholder="User I.D." required autofocus="">
+            <input type="password" name="passkey" placeholder="Password" required autofocus="">
 
             <div class="login-btn">
               <button class="btn" type="submit">LOGIN</button>

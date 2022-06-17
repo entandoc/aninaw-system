@@ -70,7 +70,7 @@
       </li>
 
       <li class="log_out">
-        <a href="#">
+        <a href="/admin/logout">
           <i class='bx bx-log-out'></i>
           <span class="links_name">Log out</span>
         </a>
@@ -93,7 +93,7 @@
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Total Complaint Requests</div>
-            <div class="number">40,876</div>
+            <div class="number">{{ count($total) }}</div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
@@ -104,7 +104,7 @@
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Total Approved Requests</div>
-            <div class="number">38,876</div>
+            <div class="number">{{ count($totalApproved) }}</div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
@@ -115,7 +115,7 @@
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Total Ongoing Complaints</div>
-            <div class="number">$12,876</div>
+            <div class="number">{{ count($totalOnGoing) }}</div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
@@ -126,7 +126,7 @@
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Total Finished Complaints</div>
-            <div class="number">11,086</div>
+            <div class="number">{{ count($totalCompleted) }}</div>
             <div class="indicator">
               <i class='bx bx-down-arrow-alt down'></i>
               <span class="text">Down From Today</span>
@@ -150,105 +150,90 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($previews as $preview)
                         <tr>
-                          <td data-label="Date">1000</td>
-                          <td data-label="Name">01-01-2022</td>
-                          <td data-label="Location">Snow, Jon</td>
-                          <td data-label="Nature of Complaint">Almanza</td>
+                          <td data-label="Date">{{ date('m-d-Y', strtotime($preview->updated_at)); }}</td>
+                          <td data-label="Name">{{ $preview->complainant->name }}</td>
+                          <td data-label="Location">{{ $preview->address->barangay }}</td>
+                          <td data-label="Nature of Complaint">{{ $preview->complaint->subject }}</td>
                         </tr>
+                        @endforeach
 
-                        <tr>
-                          <td data-label="Date">1000</td>
-                          <td data-label="Name">01-01-2022</td>
-                          <td data-label="Location">Snow, Jon</td>
-                          <td data-label="Nature of Complaint">Almanza</td>
-                        </tr>
-
-                        <tr>
-                          <td data-label="Date">1000</td>
-                          <td data-label="Name">01-01-2022</td>
-                          <td data-label="Location">Snow, Jon</td>
-                          <td data-label="Nature of Complaint">Almanza</td>
-                        </tr>
-
-                        <tr>
-                          <td data-label="Date">1000</td>
-                          <td data-label="Name">01-01-2022</td>
-                          <td data-label="Location">Snow, Jon</td>
-                          <td data-label="Nature of Complaint">Almanza</td>
-                        </tr>
-
-                        <tr>
-                          <td data-label="Date">1000</td>
-                          <td data-label="Name">01-01-2022</td>
-                          <td data-label="Location">Snow, Jon</td>
-                          <td data-label="Nature of Complaint">Almanza</td>
-                        </tr>
-
-                        <tr>
-                          <td data-label="Date">1000</td>
-                          <td data-label="Name">01-01-2022</td>
-                          <td data-label="Location">Snow, Jon</td>
-                          <td data-label="Nature of Complaint">Almanza</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
-          <div class="button">
-            <a href="/admin/requests">See All</a>
-          </div>
-        </div>
 
         <div class="top-sales box">
-          <div class="title">Most numbered complaints</div>
+          <div class="title">Complaints Per Offices</div>
           <ul class="top-sales-details">
             <li>
               <a href="#">
-                <span class="product">Police Department</span>
+                <span class="product">Business Permit and Licensing Office</span>
               </a>
-              <span class="price">1000</span>
+              <span class="price">{{ $mostNumComp[0] }}</span>
             </li>
 
             <li>
               <a href="#">
-                <span class="product">HR Department</span>
+                <span class="product">City Health Office</span>
               </a>
-              <span class="price">900</span>
+              <span class="price">{{ $mostNumComp[1] }}</span>
+            </li>
+
+            <li>
+              <a href="#">
+                <span class="product">City Planning and Development Office </span>
+              </a>
+              <span class="price">{{ $mostNumComp[2] }}</span>
+            </li>
+
+            <li>
+              <a href="#">
+                <span class="product">City Social Welfare & Development Office</span>
+              </a>
+              <span class="price">{{ $mostNumComp[3] }}</span>
+            </li>
+
+            <li>
+              <a href="#">
+                <span class="product">Human Resources Management Department</span>
+              </a>
+              <span class="price">{{ $mostNumComp[4] }}</span>
+            </li>
+
+            <li>
+              <a href="#">
+                <span class="product">Office of the City Civil Registry</span>
+              </a>
+              <span class="price">{{ $mostNumComp[5] }}</span>
+            </li>
+
+            <li>
+              <a href="#">
+                <span class="product">Office of the City Engineer</span>
+              </a>
+              <span class="price">{{ $mostNumComp[6] }}</span>
             </li>
 
             <li>
               <a href="#">
                 <span class="product">Office of the City Mayor</span>
               </a>
-              <span class="price">800</span>
+              <span class="price">{{ $mostNumComp[7] }}</span>
             </li>
 
             <li>
               <a href="#">
-                <span class="product">Office of the Engineer</span>
+                <span class="product">Police Department</span>
               </a>
-              <span class="price">700</span>
-            </li>
-
-            <li>
-              <a href="#">
-                <span class="product">City Health Offie</span>
-              </a>
-              <span class="price">600</span>
+              <span class="price">{{ $mostNumComp[8] }}</span>
             </li>
 
             <li>
               <a href="#">
                 <span class="product">Urban Poor Affairs Offices</span>
               </a>
-              <span class="price">500</span>
-            </li>
-
-            <li>
-              <a href="#">
-                <span class="product">City Social Welfare and Development Office</span>
-              </a>
-              <span class="price">400</span>
+              <span class="price">{{ $mostNumComp[9] }}</span>
             </li>
           </ul>
         </div>

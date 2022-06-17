@@ -338,7 +338,7 @@
                 <div class="footer-col">
                     <h4>Get Help</h4>
                     <ul>
-                        <li><a href="/faqs">FAQs</a></li>
+                        <li><a href="#">FAQs</a></li>
                         <li><a href="/complaint/create">Submit Form</a></li>
                     </ul>
                 </div>

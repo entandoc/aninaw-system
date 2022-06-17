@@ -71,7 +71,7 @@
             </li>
 
             <li class="log_out">
-                <a href="#">
+                <a href="/admin/logout">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
                 </a>
@@ -104,53 +104,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($news as $item)
                         <tr>
-                            <td data-label="Title">Las Pinas denies selling friendship route</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
+                            <td data-label="Title">{{ $item->title }}</td>
+                            <td data-label="Date">{{ date('d/m/Y h:ia', strtotime($item->created_at)) }}</td>
+                            <td data-label="Author">Aninaw Moderator</td>
+                            <td data-label="View"><a href="/admin/news/article/{{ $item->id }}" class="btn" id="view">View</td>
+                            <td data-label="Delete"><a href="/admin/news/delete{{ $item->id }}" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
-
-                        <tr>
-                            <td data-label="Title">Las Pinas denies selling friendship route</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Title">Las Pinas denies selling friendship route</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Title">Las Pinas denies selling friendship route</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Title">Las Pinas denies selling friendship route</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Title">Las Pinas denies selling friendship route</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Author">Metro Cities News</td>
-                            <td data-label="View"><a href="/admin/news/article" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

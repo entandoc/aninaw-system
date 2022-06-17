@@ -74,7 +74,7 @@
             </li>
 
             <li class="log_out">
-                <a href="#">
+                <a href="/admin/logout">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
                 </a>
@@ -90,20 +90,27 @@
           </div>
         </nav>
 
+        @php
+            include('../public/includes/idGenerator.inc.php');
+            $cred = generateId();
+        @endphp
         <div class="home-content">
             <div class="container-two">
                 <h3 class="status-label">ADD A USER</h3>
-                <form class="post-news">
+                <form class="post-news" action="/admin/user/save" method="POST">
+                    @csrf
+                    <input type="hidden" name="user_id" value="{{ $cred }}">
+                    <input type="hidden" name="passkey" value="{{ $cred }}">
                     <div class="radio-group">
                         <label class="control-label col-sm-2" for="date">User Type:</label>
                         <div class="form-radio">
                             <div class="col-sm-10">
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="optradio"> Admin
+                                        <input type="radio" value="Administrator" class="form-check-input" name="user_type"> Admin
                                     </label>
                                     <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="optradio"> Moderator
+                                        <input type="radio" value="Moderator" class="form-check-input" name="user_type"> Moderator
                                     </label>
                                 </div>
                             </div>
@@ -114,18 +121,18 @@
                         <label class="control-label col-sm-2" for="dept">Department:</label>
                         <div class="col-sm-10">
                             <!-- Dropdown -->
-                            <select name="slct" id="slct">
-                                <option value=""> Choose Department </option>
-                                <option value="bplo"> Business Permit and Licensing Office </option>
-                                <option value="cho"> City Health Office </option>
-                                <option value="cpdo"> City Planning and Development Office </option>
-                                <option value="cswdo"> City Social Welfare & Development Office </option>
-                                <option value="hrmd"> Human Resource Management Department </option>
-                                <option value="occr"> Office of the City Civil Registry </option>
-                                <option value="oce"> Office of the City Engineer </option>
-                                <option value="ocm"> Office of the City Mayor </option>
-                                <option value="pd"> Police Department </option>
-                                <option value="upao"> Urban Poor Affairs Offices </option>
+                            <select name="department_id" id="slct">
+                                <option value="11"> Choose Department </option>
+                                <option value="1"> Business Permit and Licensing Office </option>
+                                <option value="2"> City Health Office </option>
+                                <option value="3"> City Planning and Development Office </option>
+                                <option value="4"> City Social Welfare & Development Office </option>
+                                <option value="5"> Human Resource Management Department </option>
+                                <option value="6"> Office of the City Civil Registry </option>
+                                <option value="7"> Office of the City Engineer </option>
+                                <option value="8"> Office of the City Mayor </option>
+                                <option value="9"> Police Department </option>
+                                <option value="10"> Urban Poor Affairs Offices </option>
                             </select>
                         </div>
                     </div>

@@ -13,9 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('concerns', function (Blueprint $table) {
-            $table->id();
+        Schema::create('logs', function (Blueprint $table) {
+            $table->id('id');
+            $table->unsignedInteger('appeal_id');
+            $table->string('message');
             $table->timestamps();
+            $table->string('logged_by');
+            $table->foreign('appeal_id')
+                ->references('id')
+                ->on('appeals')
+                ->onDelete('cascade');
         });
     }
 
@@ -26,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('concerns');
+        Schema::dropIfExists('logs');
     }
 };

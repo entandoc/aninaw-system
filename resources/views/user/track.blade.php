@@ -39,84 +39,87 @@
         <h2>TRACK COMPLAINTS</h2>
     </section>
 
+    @php
+        include('../public/includes/status.inc.php');
+    @endphp
+
     <!-- Body -->
     <div class="wrapper">
         <div class="con-container"></div>
         <form action="" method="get">
             <div class="container">
-                <label>Email <span style="color: red;">*</span></label>
-                <p>erikanicole.tandoc@tup.edu.ph</p>
+                <label>Email </label>
+                <p>{{ $appeal->complainant->email }}</p>
             </div>
         
             <div class="container">
-                <label>Name (Last, First, Middle) <span style="color: red;">*</span></label>
-                <p>Tandoc, Erika Nicole, Lopez</p>
+                <label>Name (Last, First, Middle) </label>
+                <p>{{ $appeal->complainant->name }}</p>
             </div>
         
             <div class="container">
-                <label>Location <span style="color: red;">*</span></label>    
+                <label>Location </label>    
                 <div class="location-drp">
                     <select name="slct" id="slct">
-                        <option value=""> Almanza</option>
+                        <option value=""> {{ $appeal->address->barangay }}</option>
                     </select>
                 </div>
             </div>
         
             <div class="container">
-                <label>Full Address <span style="color: red;">*</span></label>
-                <p>Almanza, Las Pinas City</p>
+                <label>Full Address </label>
+                <p>{{ $appeal->address->home_address }}</p>
             </div>
         
             <div class="container">
-                <label>Landmark <span style="color: red;">*</span></label>
-                <p>SM Southmall</p>
+                <label>Landmark </label>
+                <p>{{ $appeal->address->landmark }}</p>
             </div>
         
             <div class="container">
-                <label>Phone Number <span style="color: red;">*</span></label>
-                <p>09123456789</p>
+                <label>Phone Number </label>
+                <p>{{ $appeal->complainant->phone_number }}</p>
             </div>
         
             <div class="container">
-                <label>Subject of Complaint <span style="color: red;">*</span></label>
+                <label>Subject of Complaint </label>
                 <div class="department-drp">
                     <select name="slct1" id="slct1">
-                        <option value=""> Police Department</option>
+                        <option value=""> {{ $appeal->complaint->department->name }}</option>
                     </select>
                 </div>
                 <div class="nature-drp">
                     <select name="slct2" id="slct2">
-                        <option value=""> Sexual Assault</option>
+                        <option value=""> {{ $appeal->complaint->subject }}</option>
                     </select>
                 </div>
             </div>
         
             <div class="container">
-                <label>Complaint Description <span style="color: red;">*</span></label>
-                <h5 id="complaint-description"><span>Someone sexual assualted me while walking at the street near SM Soutmall.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, delectus.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vel excepturi
-                    aspernatur officiis ipsam aut, nam ducimus enim ipsa similique quas dolor iste
-                    laudantium commodi voluptatibus optio, deserunt modi reiciendis.</span>
+                <label>Complaint Description </label>
+                <h5 id="complaint-description"><span>{{ $appeal->complaint->description }}</span>
                 </h5>
             </div>
         
             <div class="container">
                 <label>Attach a photo (Optional)</label>
-                <p> N/A</p>
-            </div>
-
-            <div class="container">
-                <label>Phone Number <span style="color: red;">*</span></label>
-                <p>09123456789</p>
+                <img src="{{ asset('uploads/' . $appeal->complaint->image) }}" alt="">
             </div>
         
             <div class="container">
                 <div class="checkbox">
-                    <label>Anonymous (Optional)</label>
+                    <label>Anonymous </label>
+                        @php
+                            $temp = $appeal->complainant->name;
+                        @endphp
+                        @if($temp == 1)
+                            <p>Yes</p>
+                            @else
+                                <p>No</p>
+                        @endif
                 </div>
             </div>
-
+        </form>
             <div class="line"></div>
 
             <div class="container-two">
@@ -125,28 +128,27 @@
                     <table style="width:100%">
                         <tr>
                             <td class="title">Location:</td>
-                            <td>Almanza</td>
+                            <td>{{ $appeal->address->barangay }}</td>
                         </tr>
                         <tr>
                             <td class="title">Subject of complaint:</td>
-                            <td>Covid-19 Positivity in all aspect</td>
+                            <td>{{ $appeal->complaint->subject }}</td>
                         </tr>
                         <tr>
                             <td class="title">Status:</td>
-                            <td><h4 class="status status-completed">Completed</h4></td>
+                            <td><h4 class="status status-completed">{{ $appeal->status }}</h4></td>
                         </tr>
                     </table>
                 </div>
                 <div class="log-div">
                     <table class="log-table" style="width:100%">
-                        <tr class="log-tr">
-                            <td class="track">The complaint has been resolved</td>
-                            <td>06-16-2022 9:30am</td>
-                        </tr>
-                        <tr class="log-tr">
-                            <td class="track">Coordinated with police to investigate</td>
-                            <td>06-16-2022 9:00am</td>
-                        </tr>
+                        @foreach($appeal->log as $log)
+                            <tr class="log-tr">
+                                <td class="track">{{ $log['message'] }}</td>
+                                <td>{{ $log['created_at'] }}</td>
+                            </tr>
+                        @endforeach
+                        
                     </table>
                 </div>
             </div>

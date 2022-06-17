@@ -74,7 +74,7 @@
             </li>
 
             <li class="log_out">
-                <a href="#">
+                <a href="/admin/logout">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
                 </a>
@@ -94,46 +94,11 @@
             <div class="container">
                 <article>
                     <!-- <h4 class ="mb-4" id="category"><a href="">FRIENDSHIP ROUTE STICKERS</a></h4> -->
-                    <h1>Las Pinas Denies Selling Friendship Route Stickers</h1>
-                    <h5>April 1, 2022 <br> by Metro Cities News</h5>
-                    <img class="img-fluid rounded" src="/images/news/n1.jpg">
+                    <h1>{{ $news->title }}</h1>
+                    <h5>{{ date('M_d,Y h:ia', strtotime($news->created_at)) }}<br> Aninaw Moderator</h5>
+                    <img class="img-fluid rounded" src="{{ asset('uploads/' . $news->image) }}">
                     <section class="content">
-                        <p>Las Pinas cautioned motorists, who are using public or private roads as
-                            alternative routes to ease or decongest traffic along the main thoroughfares
-                            in the city, against dealing with unscrupulous persons selling fake friendship
-                            route stickers, according to a report by Manila Bulletin.
-                        </p>
-
-                        <p>The city government issued the advisory after a fake Las Pinas City government
-                            account was created, selling fake friendship stickers for P600 to P,1000.
-                        </p>
-
-                        <p>The city government reiterated its call to motorists who wish to avail of a free
-                            friendship route sticker to visit the link
-                            <a id="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdIKlDn1eRXOON3YUwSzttcbVzmji144weA9EO85YeJOOG_wQ/viewform">bit.ly/LPCFriendshipStickerApp.</a>
-                        </p>
-
-                        <p>Persons caught selling fake friendship route stickers will be slapped with a
-                            fine of P3,000 to P5,000, according to city officials.
-                        </p>
-
-                        <p>The city government issued on March 17 guidelines on how to apply for the
-                            friendship route stickers.
-                        </p>
-
-                        <p>It said the vehicle’s official receipt (OR) and Certificate of Registration
-                            (CR) of the owner should be registered with Las Piñas address.
-                        </p>
-
-                        <p>Las Pinas residents can still avail of the stickers even as their vehicle is
-                            not registered in the city by just showing driver’s license or any other documents
-                            that will prove that the applicant is a city resident.
-                        </p>
-
-                        <p>Those that are not qualified to apply for the stickers are public utility jeepneys,
-                            buses, taxis, school bus, delivery trucks and vans, tricycle and motorcycles,
-                            as well as vehicles stamped with “FOR HIRE” notation.
-                        </p>
+                        <p>{{ $news->content }}</p>
                     </section>
                 </article>
             </div>

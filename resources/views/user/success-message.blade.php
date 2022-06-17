@@ -44,7 +44,7 @@
         <div class="con-container"></div>
         <div class="container">
             <h2>Form Successfuly Submitted!</h2>
-            <h3>Ticket Reference # 00001</h3>
+            <h3>Reference ID# {{ $referenceId }}</h3>
             <p>Your complaint/report has been submitted successfully and will now undergo approval.
                 Please wait for our email or call once your complaint/report is approved and ready for processing.
                 To check complaints/report, you can visit the <a href="/complaint">complaints table sheet</a>
@@ -82,7 +82,7 @@
                 <div class="footer-col">
                     <h4>Get Help</h4>
                     <ul>
-                        <li><a href="/faqs">FAQs</a></li>
+                        <li><a href="#">FAQs</a></li>
                         <li><a href="/complaint/create">Submit Form</a></li>
                     </ul>
                 </div>

@@ -71,7 +71,7 @@
             </li>
 
             <li class="log_out">
-                <a href="#">
+                <a href="/admin/logout">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
                 </a>
@@ -104,53 +104,16 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($users as $user)
                         <tr>
-                            <td data-label="User I.D.">A-0001</td>
-                            <td data-label="User Type">Admin</td>
-                            <td data-label="Department"></td>
-                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
+                            <td data-label="User I.D.">{{ $user->user_id }}</td>
+                            <td data-label="User Type">{{ $user->user_type }}</td>
+                            <td data-label="Department">{{ $user->department->name }}</td>
+                            <td data-label="Edit Password"><a href="/admin/users/edit/{{ $user->id }}" class="btn" id="edit">Edit</td>
                             <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
                         </tr>
+                        @endforeach
 
-                        <tr>
-                            <td data-label="User I.D.">A-0001</td>
-                            <td data-label="User Type">Moderator</td>
-                            <td data-label="Department">Police Department</td>
-                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
-                            <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="User I.D.">A-0001</td>
-                            <td data-label="User Type">Moderator</td>
-                            <td data-label="Department">Office of the City Mayor</td>
-                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
-                            <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="User I.D.">A-0001</td>
-                            <td data-label="User Type">Moderator</td>
-                            <td data-label="Department">Office of the City Vice Mayor</td>
-                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
-                            <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="User I.D.">A-0001</td>
-                            <td data-label="User Type">Moderator</td>
-                            <td data-label="Department">aninaw.admin@gmail.com</td>
-                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
-                            <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="User I.D.">A-0001</td>
-                            <td data-label="User Type">Moderator</td>
-                            <td data-label="Department">aninaw.admin@gmail.com</td>
-                            <td data-label="Edit Password"><a href="/admin/users/edit" class="btn" id="edit">Edit</td>
-                            <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
-                        </tr>
                     </tbody>
                 </table>
             </div>

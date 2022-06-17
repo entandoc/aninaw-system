@@ -71,7 +71,7 @@
             </li>
 
             <li class="log_out">
-                <a href="#">
+                <a href="/admin/logout">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
                 </a>
@@ -92,7 +92,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Ticket No.</th>
+                            <th>Reference ID</th>
                             <th>Date</th>
                             <th>Name</th>
                             <th>Location</th>
@@ -102,65 +102,21 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @php
+                            include('../public/includes/status.inc.php');
+                        @endphp
+                        @foreach($appeals as $appeal)
                         <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">Snow, Jon</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="Status"><p class="status status-pending">Pending</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
+                            <td data-label="Reference ID">{{ $appeal->flag }}</td>
+                            <td data-label="Date">{{ date('m/d/Y h:i:sa', strtotime($appeal->updated_at)); }}</td>
+                            <td data-label="Name">{{ $appeal->complainant->name }}</td>
+                            <td data-label="Location">{{ $appeal->address->barangay }}</td>
+                            <td data-label="Nature of Complaint">{{ $appeal->complaint->subject }}</td>
+                            <td data-label="Status"><p class="status {{ indicateStatus($appeal->status); }}">{{ $appeal->status }}</p></td>
+                            <td data-label="View"><a href="/admin/approved/view/{{ $appeal->id }}" class="btn" id="view">View</td>
                         </tr>
+                        @endforeach
 
-                        <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">Lannister, Tyrion</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="Status"><p class="status status-on-going">On Going</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">Stark, Arya</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="Status"><p class="status status-completed">Completed</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">Targaryen, Daenerys</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="Status"><p class="status status-pending">Pending</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">The Hound</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="Status"><p class="status status-on-going">On Going</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">Snow, Jon</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="Status"><p class="status status-completed">Completed</p></td>
-                            <td data-label="View"><a href="/admin/approved/view" class="btn" id="view">View</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>

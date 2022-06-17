@@ -49,7 +49,7 @@
         <div class="topnav">
             <p>TRACK YOUR SUBMITTED COMPLAINT HERE</p>
             <div class="search-container">
-                <form action="/action_page.php">
+                <form action="/search" method="get">
                     <input type="text" placeholder="Enter Reference No." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
@@ -58,7 +58,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>Complaint No.</th>
+                    <th>No.</th>
                     <th>Date Submitted</th>
                     <th>Subject of Complaint</th>
                     <th>Location</th>
@@ -66,97 +66,32 @@
                 </tr>
             </thead>
             <tbody>
+                @php
+                    include('../public/includes/status.inc.php');
+                    $counter = 1;
+                @endphp
+                @foreach($appeals as $appeal)
                 <tr>
-                    <td data-label="Complaint No.">0001</td>
-                    <td data-label="Date Submitted">01-01-2022</td>
-                    <td data-label="Subject of Complaint">Garbage</td>
-                    <td data-label="Location">Almanza</td>
-                    <td data-label="Status"><p class="status status-pending">Pending</p></td>
+                    <td data-label="No.">{{ $counter++; }}</td>
+                    <td data-label="Date Submitted">{{ date('m/d/Y h:i:sa', strtotime($appeal->created_at)); }}</td>
+                    <td data-label="Subject of Complaint">{{ $appeal->complaint->subject }}</td>
+                    <td data-label="Location">{{ $appeal->address->barangay }}</td>
+                    <td data-label="Status"><p class="status {{ indicateStatus($appeal->status); }}">{{ $appeal->status }}</p></td>
                 </tr>
+                @endforeach
 
-                <tr>
-                    <td data-label="Complaint No.">0002</td>
-                    <td data-label="Date Submitted">01-02-2022</td>
-                    <td data-label="Subject of Complaint">Streetlights</td>
-                    <td data-label="Location">Talon Uno</td>
-                    <td data-label="Status"><p class="status status-on-going">On Going</p></td>
-                </tr>
-
-                <tr>
-                    <td data-label="Complaint No.">0003</td>
-                    <td data-label="Date Submitted">01-03-2022</td>
-                    <td data-label="Subject of Complaint">Public Official</td>
-                    <td data-label="Location">Talon Dos</td>
-                    <td data-label="Status"><p class="status status-completed">Completed</p></td>
-                </tr>
-
-                <tr>
-                    <td data-label="Complaint No.">0004</td>
-                    <td data-label="Date Submitted">01-04-2022</td>
-                    <td data-label="Subject of Complaint">Garbage</td>
-                    <td data-label="Location">Zapote</td>
-                    <td data-label="Status"><p class="status status-pending">Pending</p></td>
-                </tr>
-
-                <tr>
-                    <td data-label="Complaint No.">0005</td>
-                    <td data-label="Date Submitted">01-05-2022</td>
-                    <td data-label="Subject of Complaint">Neighbor</td>
-                    <td data-label="Location">Almanza</td>
-                    <td data-label="Status"><p class="status status-cancelled">Cancelled</p></td>
-                </tr>
-
-                <tr>
-                    <td data-label="Complaint No.">0005</td>
-                    <td data-label="Date Submitted">01-05-2022</td>
-                    <td data-label="Subject of Complaint">Neighbor</td>
-                    <td data-label="Location">Almanza</td>
-                    <td data-label="Status"><p class="status status-on-going">On Going</p></td>
-                </tr>
-
-                <tr>
-                    <td data-label="Complaint No.">0005</td>
-                    <td data-label="Date Submitted">01-05-2022</td>
-                    <td data-label="Subject of Complaint">Neighbor</td>
-                    <td data-label="Location">Almanza</td>
-                    <td data-label="Status"><p class="status status-on-going">On Going</p></td>
-                </tr>
-
-                <tr>
-                    <td data-label="Complaint No.">0003</td>
-                    <td data-label="Date Submitted">01-03-2022</td>
-                    <td data-label="Subject of Complaint">Public Official</td>
-                    <td data-label="Location">Talon Dos</td>
-                    <td data-label="Status"><p class="status status-completed">Completed</p></td>
-                </tr>
-
-                <tr>
-                    <td data-label="Complaint No.">0003</td>
-                    <td data-label="Date Submitted">01-03-2022</td>
-                    <td data-label="Subject of Complaint">Public Official</td>
-                    <td data-label="Location">Talon Dos</td>
-                    <td data-label="Status"><p class="status status-completed">Completed</p></td>
-                </tr>
-
-                <tr>
-                    <td data-label="Complaint No.">0004</td>
-                    <td data-label="Date Submitted">01-04-2022</td>
-                    <td data-label="Subject of Complaint">Garbage</td>
-                    <td data-label="Location">Zapote</td>
-                    <td data-label="Status"><p class="status status-pending">Pending</p></td>
-                </tr>
             </tbody>
         </table>
     </div>
 
     <!-- Pagination -->
-    <div class="pagination">
+    <!-- <div class="pagination">
         <li class="page-item previous-page disable"><a class="page-link" href="">Prev</a></li>
         <li class="page-item current-page active"><a class="page-link" href="">1</a></li>
         <li class="page-item current-page"><a class="page-link" href="">2</a></li>
         <li class="page-item current-page"><a class="page-link" href="">3</a></li>
         <li class="page-item next-page"><a class="page-link" href="">Next</a></li>
-    </div>
+    </div> -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -184,7 +119,7 @@
                 <div class="footer-col">
                     <h4>Get Help</h4>
                     <ul>
-                        <li><a href="/faqs">FAQs</a></li>
+                        <li><a href="#">FAQs</a></li>
                         <li><a href="/complaint/create">Submit Form</a></li>
                     </ul>
                 </div>

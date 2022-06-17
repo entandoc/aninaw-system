@@ -14,19 +14,20 @@ return new class extends Migration
     public function up()
     {
         Schema::create('complaints', function (Blueprint $table) {
-            $table->integer('id', $autoIncrement = true);
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('barangay');
-            $table->string('address');
-            $table->string('ladmark');
-            $table->integer('phone_number');
-            $table->string('department');
+            $table->id('id');
+            $table->unsignedInteger('appeal_id');
+            $table->unsignedInteger('department_id');
             $table->string('subject');
-            $table->string('description');
+            $table->string('description', 1500);
             $table->string('image');
-            $table->integer('is_anonymous');
-            $table->timestamps();
+            $table->foreign('appeal_id')
+                ->references('id')
+                ->on('appeals')
+                ->onDelete('cascade');
+            $table->foreign('department_id')
+                ->references('id')
+                ->on('departments')
+                ->onDelete('cascade');
         });
     }
 

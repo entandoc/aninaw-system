@@ -74,7 +74,7 @@
             </li>
 
             <li class="log_out">
-                <a href="#">
+                <a href="/admin/logout">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
                 </a>
@@ -93,27 +93,25 @@
         <div class="home-content">
             <div class="container-two">
                 <h3 class="status-label">POST AN ARTICLE</h3>
-                <form class="post-news">
+                <form class="post-news" action="/admin/news/publish" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="title">Title:</label>
                         <div class="col-sm-10">
-                            <input type="title" class="form-control" id="email" placeholder="Title">
+                            <input type="text" name="title" class="form-control" id="email" placeholder="Title">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="date">Photo:</label>
                         <div class="insert-photo">
-                            <a href="">
-                                <i class="fa fa-paperclip" aria-hidden="true"></i> 
-                                Attach a photo
-                            </a>
+                            <input type="file" name="image" id="">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="date">Content:</label>
-                            <textarea placeholder="Content"></textarea>
+                            <textarea placeholder="Content" name="content"></textarea>
                     </div>
                     
                     <div class="form-group">

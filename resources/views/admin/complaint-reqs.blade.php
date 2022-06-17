@@ -8,9 +8,6 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/jpg" href="/images/logo.png">
 
@@ -71,7 +68,7 @@
             </li>
 
             <li class="log_out">
-                <a href="#">
+                <a href="/admin/logout">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
                 </a>
@@ -92,7 +89,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Ticket No.</th>
+                            <th>Reference ID</th>
                             <th>Date</th>
                             <th>Name</th>
                             <th>Location</th>
@@ -103,71 +100,18 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($appeals as $appeal)
                         <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">Snow, Jon</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
+                            <td data-label="Reference ID">{{ $appeal->flag }}</td>
+                            <td data-label="Date">{{ date('m/d/Y h:i:sa', strtotime($appeal->created_at)); }}</td>
+                            <td data-label="Name">{{ $appeal->complainant->name }}</td>
+                            <td data-label="Location">{{ $appeal->address->barangay }}</td>
+                            <td data-label="Nature of Complaint">{{ $appeal->complaint->subject }}</td>
+                            <td data-label="View"><a href="/admin/requests/view/{{ $appeal->id }}" class="btn" id="view">View</td>
+                            <td data-label="Approve"><a href="/approve/{{ $appeal->id }}" class="btn" id="approve">Approve</td>
+                            <td data-label="Reject"><a href="/reject/{{ $appeal->id }}" class="btn" id="reject">Reject</td>
                         </tr>
-
-                        <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">Lannister, Tyrion</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">Stark, Arya</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">Targaryen, Daenerys</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">The Hound</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
-                        </tr>
-
-                        <tr>
-                            <td data-label="Ticket No.">1000</td>
-                            <td data-label="Date">01-01-2022</td>
-                            <td data-label="Name">Snow, Jon</td>
-                            <td data-label="Location">Almanza</td>
-                            <td data-label="Nature of Complaint">Garbage</td>
-                            <td data-label="View"><a href="/admin/requests/view" class="btn" id="view">View</td>
-                            <td data-label="Approve"><a href="" class="btn" id="approve"><label class="show_button" for="check2">Approve</label></td>
-                            <td data-label="Reject"><a href="" class="btn" id="reject"><label class="show_button" for="check">Reject</label></td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
