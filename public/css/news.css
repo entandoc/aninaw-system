@@ -130,7 +130,7 @@ main{
 
 .main-container-right article{
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   padding: 15px 0;
   border-bottom: 1px solid lightgray;
 }
