@@ -154,16 +154,18 @@
                                     <td class="title">Subject of complaint:</td>
                                     <td>{{ $appeal->complaint->subject }}</td>
                                 </tr>
-                                <tr>
-                                    <td class="title">Status:</td>
-                                    <td>
-                                        <select name="slct3" id="slct3">
-                                            <option value=""> Pending</option>
-                                            <option value=""> On Going</option>
-                                            <option value=""> Completed</option>
-                                        </select>
-                                    </td>
-                                </tr>
+                                <form>
+                                    <tr>
+                                        <td class="title">Status:</td>
+                                        <td>
+                                            <select name="slct3" id="slct3">
+                                                <option value=""> Pending</option>
+                                                <option value=""> On Going</option>
+                                                <option value=""> Completed</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </form>
                             </table>
                         </div>
                         <form action="/department/log" method="post">
