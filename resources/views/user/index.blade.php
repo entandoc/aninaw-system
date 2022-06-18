@@ -51,12 +51,13 @@
         <h4>just in </h4>
         <div>
           <h2>{{ $item->title }}</h2>
-          <p style="text-overflow: ellipsis; overflow: hidden;">{{ $item->content }}</p>
+          <p>{{ $item->content }}</p>
           <a href = "/complaint/news/{{ $item->id }}">Read More <span>>></span></a>
         </div>
         <img src = "{{ asset('uploads/' . $item->image) }}">
       </article>
       @endforeach
+  </section>
 
   <!-- Pagination -->
   <!-- <div class="pagination">
@@ -67,51 +68,51 @@
     <li class="page-item next-page"><a class="page-link" href="">Next</a></li>
   </div> -->
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-row">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
 
-        <div class="footer-col">
-          <h4>Las Pinas City Hall</h4>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Operating Hours</a></li>
-            <li><a href="/directory">Telephone Directory</a></li>
-          </ul>
-        </div>
+                <div class="footer-col">
+                    <h4>Las Pinas City Hall</h4>
+                    <ul>
+                        <li><a href="/complaint/about/laspinas">About Us</a></li>
+                        <li><a href="/operatinghours">Operating Hours</a></li>
+                        <li><a href="/directory">Telephone Directory</a></li>
+                    </ul>
+                </div>
 
-        <div class="footer-col">
-          <h4>Aninaw</h4>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="/complaint/about#developers">The Developers</a></li>
-            <li><a href="#">Privacy and Terms</a></li>
-          </ul>
-        </div>
+                <div class="footer-col">
+                    <h4>Aninaw</h4>
+                    <ul>
+                        <li><a href="/complaint/about/aninaw">About Us</a></li>
+                        <li><a href="about-aninaw.html#developers">The Developers</a></li>
+                        <li><a href="/privacyterms">Privacy and Terms</a></li>
+                    </ul>
+                </div>
         
-        <div class="footer-col">
-          <h4>Get Help</h4>
-          <ul>
-            <li><a href="/faqs">FAQs</a></li>
-            <li><a href="/complaint/create">Submit Form</a></li>
-          </ul>
-        </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="/faqs">FAQs</a></li>
+                        <li><a href="/complaint/create">Submit Form</a></li>
+                    </ul>
+                </div>
 
-        <div class="footer-col">
-          <h4>Socials</h4>
-          <div class="social-links">
-            <a href="#"><i class="fa fa-facebook-square"></i></a>
-            <a href=""><i class="fa fa-twitter-square"></i></a>
-            <div class="copyright">
-              <i class="fa fa-copyright"> 2022</i>
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/AninawLPC"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/Aninaw_LPC"><i class="fa fa-twitter-square"></i></a>
+                        <div class="copyright">
+                            <i class="fa fa-copyright"> 2022</i>
+                         </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
-
-      </div>
-    </div>
-  </footer>
+    </footer>
 
   <!-- JavaScript for Toggle Menu -->
   <script>

@@ -337,6 +337,15 @@ textarea::-webkit-scrollbar{
     font-weight: 600;
 }
 
+#image{
+  display: flex;
+  flex-direction: column;
+}
+
+#image label{
+  margin-bottom: 1rem;
+}
+
 /* Button */
 button{
     margin-top: 1rem;

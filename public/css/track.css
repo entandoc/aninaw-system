@@ -260,6 +260,15 @@ table td{
   padding-right: 8rem;
 }
 
+#image{
+  display: flex;
+  flex-direction: column;
+}
+
+#image label{
+  margin-bottom: 1rem;
+}
+
 /* Footer */
 .footer{
     background-color: #efefef;

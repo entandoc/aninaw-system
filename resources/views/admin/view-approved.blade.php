@@ -149,9 +149,9 @@
                         </h5>
                     </div>
         
-                    <div class="container">
+                    <div class="container" id="image">
                         <label>Image</label>
-                        <img src="{{ asset('uploads/' . $appeal->complaint->image) }}" alt="">
+                        <img src="{{ asset('uploads/' . $appeal->complaint->image) }}" alt="" width="300" height="200">
                     </div>
         
                     <div class="container">

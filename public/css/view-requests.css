@@ -215,6 +215,15 @@ nav .sidebar-button i{
   padding-left: 30px;
 }
 
+#image{
+  display: flex;
+  flex-direction: column;
+}
+
+#image label{
+  margin-bottom: 1rem;
+}
+
 .line{
   border: 1px solid gray;
   background: gray;

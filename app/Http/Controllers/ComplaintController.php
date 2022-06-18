@@ -122,6 +122,10 @@ class ComplaintController extends Controller
         return view('user.about-lpc');
     }
 
+    public function privTerms() {
+        return view('user.priv-terms');
+    }
+
     // public function track() {
        
     

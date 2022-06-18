@@ -90,6 +90,28 @@ nav .fa{
     padding: 5rem 0;
 }
 
+.container h2{
+    color: #2009ef;
+    margin-top: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+}
+
+.container p{
+    margin-top: 1rem;
+}
+
+.container h3{
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.container h1{
+    color: #2009ef;
+    margin-top: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+}
 
 /* Footer */
 .footer{

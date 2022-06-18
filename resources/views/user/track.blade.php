@@ -101,9 +101,9 @@
                 </h5>
             </div>
         
-            <div class="container">
+            <div class="container" id="image">
                 <label>Attach a photo (Optional)</label>
-                <img src="{{ asset('uploads/' . $appeal->complaint->image) }}" alt="">
+                <img src="{{ asset('uploads/' . $appeal->complaint->image) }}" alt="" width="300" height="200">
             </div>
         
             <div class="container">
@@ -155,53 +155,51 @@
         </form>
     </div>   
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-row">
 
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-row">
-
-                <div class="footer-col">
-                    <h4>Las Pinas City Hall</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Operating Hours</a></li>
-                        <li><a href="#">Telephone Directory</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Aninaw</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="about-aninaw.html#developers">The Developers</a></li>
-                        <li><a href="#">Privacy and Terms</a></li>
-                    </ul>
-                </div>
-        
-                <div class="footer-col">
-                    <h4>Get Help</h4>
-                    <ul>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="form.html">Submit Form</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Socials</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href=""><i class="fa fa-twitter-square"></i></a>
-                        <div class="copyright">
-                            <i class="fa fa-copyright"> 2022</i>
-                         </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="footer-col">
+          <h4>Las Pinas City Hall</h4>
+          <ul>
+            <li><a href="/complaint/about/laspinas">About Us</a></li>
+            <li><a href="/operatinghours">Operating Hours</a></li>
+            <li><a href="/directory">Telephone Directory</a></li>
+          </ul>
         </div>
-    </footer>
+
+        <div class="footer-col">
+          <h4>Aninaw</h4>
+          <ul>
+            <li><a href="/complaint/about/aninaw">About Us</a></li>
+            <li><a href="/complaint/about#developers">The Developers</a></li>
+            <li><a href="/privacyterms">Privacy and Terms</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="/faqs">FAQs</a></li>
+            <li><a href="/complaint/create">Submit Form</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Socials</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/AninawLPC"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://twitter.com/Aninaw_LPC"><i class="fa fa-twitter-square"></i></a>
+            <div class="copyright">
+              <i class="fa fa-copyright"> 2022</i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+ </footer>
 
     <!-- JavaScript for Toggle Menu -->
     <script>

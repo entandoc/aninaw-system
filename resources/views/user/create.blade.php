@@ -150,7 +150,7 @@
 
                 <div class="container">
                     <div class="checkbox">
-                        <label><input type="checkbox" name="accepted" value="" required><a href="">Terms & Conditions</a><span style="color: red;"> *</span></label>
+                        <label><input type="checkbox" name="accepted" value="" required><a href="/complaint/create/terms">Terms & Conditions</a><span style="color: red;"> *</span></label>
                     </div>
                 </div>
 
@@ -161,7 +161,7 @@
                 </div>
 
                 <div class="btn">
-                    <button class="submit" a href="success-message.html">Submit</button>
+                    <button class="submit" a href="/successful">Submit</button>
                 </div>
             </form>
         </div>
@@ -175,34 +175,34 @@
                 <div class="footer-col">
                     <h4>Las Pinas City Hall</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Operating Hours</a></li>
-                        <li><a href="#">Telephone Directory</a></li>
+                        <li><a href="/complaint/about/laspinas">About Us</a></li>
+                        <li><a href="/operatinghours">Operating Hours</a></li>
+                        <li><a href="/directory">Telephone Directory</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Aninaw</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">The Developers</a></li>
-                        <li><a href="#">Privacy and Terms</a></li>
+                        <li><a href="/complaint/about/aninaw">About Us</a></li>
+                        <li><a href="/complaint/about#developers">The Developers</a></li>
+                        <li><a href="/privacyterms">Privacy and Terms</a></li>
                     </ul>
                 </div>
         
                 <div class="footer-col">
                     <h4>Get Help</h4>
                     <ul>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="form.html">Submit Form</a></li>
+                        <li><a href="/faqs">FAQs</a></li>
+                        <li><a href="/complaint/create">Submit Form</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Socials</h4>
                     <div class="social-links">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href=""><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.facebook.com/AninawLPC"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/Aninaw_LPC"><i class="fa fa-twitter-square"></i></a>
                         <div class="copyright">
                             <i class="fa fa-copyright"> 2022</i>
                          </div>
