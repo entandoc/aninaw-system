@@ -47,7 +47,7 @@ Route::get('/admin/news', [AdminController::class, 'newsAccess']);
 Route::get('/admin/news/post', [AdminController::class, 'postNews']);
 Route::post('/admin/news/publish', [AdminController::class, 'postArticle']);
 Route::get('/admin/news/article/{id}', [AdminController::class, 'viewArticle']);
-Route::get('/admin/news/delete{id}', [AdminController::class, 'deleteArticle']);
+Route::get('/admin/news/delete/{id}', [AdminController::class, 'deleteArticle']);
 Route::get('/admin/users', [AdminController::class, 'adminUsers']);
 Route::get('/admin/users/edit/{id}', [AdminController::class, 'editUser']);
 Route::get('/admin/users/add', [AdminController::class, 'addUser']);

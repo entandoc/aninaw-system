@@ -100,7 +100,7 @@
                             <th>User Type</th>
                             <th>Department</th>
                             <th>Edit Password</th>
-                            <th>Deactivate</th>
+                            <!-- <th>Deactivate</th> -->
                         </tr>
                     </thead>
                     <tbody>
@@ -110,7 +110,7 @@
                             <td data-label="User Type">{{ $user->user_type }}</td>
                             <td data-label="Department">{{ $user->department->name }}</td>
                             <td data-label="Edit Password"><a href="/admin/users/edit/{{ $user->id }}" class="btn" id="edit">Edit</td>
-                            <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td>
+                            <!-- <td data-label="Deactivate"><a href="" class="btn" id="deactivate"><label class="show_button" for="check">Deactivate</label></td> -->
                         </tr>
                         @endforeach
 
@@ -121,7 +121,7 @@
     </section>
 
     <!-- Deactivate Modal -->
-    <div class="container">
+    <!-- <div class="container">
         <input type="checkbox" id="check">
         <div class="background"></div>
         <div class="alert_box">
@@ -135,7 +135,7 @@
                 <label for="check">Cancel</label>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- JavaScript for Sidebar Toggle -->  
     <script>

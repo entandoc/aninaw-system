@@ -48,7 +48,7 @@
           
       @foreach($news as $item)
       <article>
-        <h4>just in </h4>
+        <h4>{{ date('m/d/y', strtotime($item->created_at)); }} </h4>
         <div>
           <h2>{{ $item->title }}</h2>
           <p>{{ $item->content }}</p>

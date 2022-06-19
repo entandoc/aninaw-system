@@ -42,7 +42,7 @@
     <article>
         <!-- <h4 class ="mb-4" id="category"><a href="">FRIENDSHIP ROUTE STICKERS</a></h4> -->
         <h1>{{ $news->title }}</h1>
-        <h5>{{ date('M_d,Y h:ia', strtotime($news->created_at)) }} <br> by Aninaw Moderator</h5>
+        <h5>{{ date('F_d,Y h:ia', strtotime($news->created_at)) }} <br> by Aninaw Moderator</h5>
         <img class="img-fluid rounded" src="{{ asset('uploads/' . $news->image) }}">
         <section class="content">
             <p>{{ $news->content }}</p>

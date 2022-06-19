@@ -81,9 +81,9 @@
                         <tr>
                             <td data-label="Ticket No.">{{ $appeal->flag }}</td>
                             <td data-label="Date">{{ date('m/d/Y h:i:sa', strtotime($appeal->updated_at)); }}</td>
-                            <td data-label="Name">{{ $appeal->complainant->name }}</td>
-                            <td data-label="Location">{{ $appeal->address->barangay }}</td>
-                            <td data-label="Nature of Complaint">{{ $appeal->complaint->subject }}</td>
+                            <td data-label="Name">{{ $appeal->name }}</td>
+                            <td data-label="Location">{{ $appeal->barangay }}</td>
+                            <td data-label="Nature of Complaint">{{ $appeal->subject }}</td>
                             <td data-label="Status"><p class="status {{ indicateStatus($appeal->status); }}">{{ $appeal->status }}</p></td>
                             <td data-label="View"><a href="/department/view/{{ $appeal->id }}" class="btn" id="view">View</td>
                         </tr>

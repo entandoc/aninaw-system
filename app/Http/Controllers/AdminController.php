@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Appeal;
 use App\Models\Complaint;
 use App\Models\Department;
+use App\Models\Log;
 use App\Models\News;
 use App\Models\User;
 
@@ -149,6 +150,12 @@ class AdminController extends Controller
         $appeal = Appeal::where('id', $id)
             ->update([
                 'status' => 'On Going'
+            ]);
+        
+        $log = Log::create([
+                'appeal_id' => $id,
+                'message' => 'Your submitted complaint has been approved by the Aninaw administrator',
+                'logged_by' => session('user_id')
             ]);
 
         return redirect('/admin/approved');

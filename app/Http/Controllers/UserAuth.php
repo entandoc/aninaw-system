@@ -68,6 +68,7 @@ class UserAuth extends Controller
             if($tempType == 'Moderator') {
                 $request->session()->put('user_id', $tempId);
                 $request->session()->put('department', $tempDept);
+                $request->session()->put('department_id', $tempDeptId);
                 return redirect('/department/dashboard');
             } else {
                 // add error message later (Moderators login only)
@@ -81,6 +82,7 @@ class UserAuth extends Controller
         if(session()->has('user_id') && session()->has('department')) {
             session()->pull('user_id');
             session()->pull('department');
+            session()->pull('department_id');
         }
 
         return redirect('/department/login');

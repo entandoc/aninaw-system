@@ -110,7 +110,7 @@
                             <td data-label="Date">{{ date('d/m/Y h:ia', strtotime($item->created_at)) }}</td>
                             <td data-label="Author">Aninaw Moderator</td>
                             <td data-label="View"><a href="/admin/news/article/{{ $item->id }}" class="btn" id="view">View</td>
-                            <td data-label="Delete"><a href="/admin/news/delete{{ $item->id }}" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
+                            <td data-label="Delete"><a href="/admin/news/delete/{{ $item->id }}" class="btn" id="delete"><label class="show_button" for="check">Delete</label></td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -121,7 +121,7 @@
     </section>
     
     <!-- Delete Modal -->
-    <div class="container">
+    <!-- <div class="container">
         <input type="checkbox" id="check">
         <div class="background"></div>
         <div class="alert_box">
@@ -131,11 +131,11 @@
             <header>Delete Approved Complaint</header>
             <p>Are you sure you want to delete the approved complaint?</p>
             <div class="btns">
-                <label for="check">Yes, Delete!</label>
+                <label for="check"><a href="/admin/news/delete/{{ $item->id }}">Yes, Delete!</a></label>
                 <label for="check">Cancel</label>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- JavaScript for Sidebar Toggle -->  
     <script>

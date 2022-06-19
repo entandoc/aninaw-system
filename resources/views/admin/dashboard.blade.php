@@ -95,8 +95,8 @@
             <div class="box-topic">Total Complaint Requests</div>
             <div class="number">{{ count($total) }}</div>
             <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
+              <!-- <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from yesterday</span> -->
             </div>
           </div>
           <i class='bx bx-mail-send cart'></i>
@@ -106,8 +106,8 @@
             <div class="box-topic">Total Approved Requests</div>
             <div class="number">{{ count($totalApproved) }}</div>
             <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
+              <!-- <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from yesterday</span> -->
             </div>
           </div>
           <i class='bx bx-message-square-check cart two'></i>
@@ -117,8 +117,8 @@
             <div class="box-topic">Total Ongoing Complaints</div>
             <div class="number">{{ count($totalOnGoing) }}</div>
             <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
+              <!-- <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from yesterday</span> -->
             </div>
           </div>
           <i class='bx bx-time-five cart three'></i>
@@ -128,8 +128,8 @@
             <div class="box-topic">Total Finished Complaints</div>
             <div class="number">{{ count($totalCompleted) }}</div>
             <div class="indicator">
-              <i class='bx bx-down-arrow-alt down'></i>
-              <span class="text">Down From Today</span>
+              <!-- <i class='bx bx-down-arrow-alt down'></i>
+              <span class="text">Down From Today</span> -->
             </div>
           </div>
           <i class='bx bx-list-check cart four'></i>
@@ -162,6 +162,7 @@
                     </tbody>
                 </table>
             </div>
+          </div>
 
         <div class="top-sales box">
           <div class="title">Complaints Per Offices</div>

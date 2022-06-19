@@ -154,22 +154,26 @@
                                     <td class="title">Subject of complaint:</td>
                                     <td>{{ $appeal->complaint->subject }}</td>
                                 </tr>
-                                <form>
-                                    <tr>
-                                        <td class="title">Status:</td>
-                                        <td>
-                                            <select name="slct3" id="slct3">
-                                                <option value=""> Pending</option>
-                                                <option value=""> On Going</option>
-                                                <option value=""> Completed</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </form>
+                                <!-- <form>
+                                    
+                                </form> -->
                             </table>
                         </div>
                         <form action="/department/log" method="post">
                             @csrf
+                            <table>
+                            <tr>
+                                <td class="title">Status:  &nbsp;</td> 
+                                <td>
+                                    <select name="status" id="slct3">
+                                        <option value="" disabled selected>Select Status</option>
+                                        <option value="Cancelled"> Cancelled</option>
+                                        <option value="On Going"> On Going</option>
+                                        <option value="Completed"> Completed</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            </table>
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="content">Content:</label>
                             <textarea name="message" placeholder="Content"></textarea>
